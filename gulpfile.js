@@ -8,7 +8,7 @@ var gulp  = require('gulp'),
     postcss      = require('gulp-postcss'),
     lazypipe = require('lazypipe'),
     rename = require('gulp-rename'),
-    nunjucks = require('gulp-nunjucks'),
+    nunjucks = require('gulp-nunjucks-render'),
     autoprefixer = require('autoprefixer');
 
 // Lazypipes to define some standard built pipes that every theme goes through
@@ -40,37 +40,37 @@ var minifyCss = lazypipe()
 gulp.task('build-default', function() {
   return gulp.src(['themes/default/css/*.scss'])
     .pipe(buildBootstrap())
-    .pipe(gulp.dest('themes/default/css/'))
+    .pipe(gulp.dest('dist/default/css/'))
     .pipe(minifyCss())
-    .pipe(gulp.dest('themes/default/css/'))
+    .pipe(gulp.dest('dist/default/css/'))
 
 });
 
 gulp.task('build-crazy', function() {
   return gulp.src(['themes/crazy/css/*.scss'])
     .pipe(buildBootstrap())
-    .pipe(gulp.dest('themes/crazy/css/'))
+    .pipe(gulp.dest('dist/crazy/css/'))
     .pipe(minifyCss())
-    .pipe(gulp.dest('themes/crazy/css/'))
+    .pipe(gulp.dest('dist/crazy/css/'))
 });
 
-gulp.task('nunjucks', function() {
-  gulp.src('nunjucks/index.html')
-      .pipe(nunjucks.compile({"css": "bootstrap4-crazy-theme.css",
-                              "title": "Crazy"}))
-      .pipe(gulp.dest('themes/crazy/'));
+// nunjucks.configure({autoescape: true});
 
-  gulp.src('nunjucks/index.html')
-      .pipe(nunjucks.compile({"css": "bootstrap4-default-theme.css",
-                              "title": "Default"}))
-      .pipe(gulp.dest('themes/default/'))
+gulp.task('nunjucks', function() {
+  gulp.src('themes/crazy/*.html')
+      .pipe(nunjucks())
+      .pipe(gulp.dest('dist/crazy/'));
+
+  gulp.src('themes/default/*.html')
+      .pipe(nunjucks())
+      .pipe(gulp.dest('dist/default/'))
   }
 );
 
 gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/default/css/*.scss'], ['build-default']);
   gulp.watch(['themes/crazy/css/*.scss'], ['build-crazy']);
-  gulp.watch(['nunjucks/*.html'], ['nunjucks']);
+  gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
 gulp.task('default', ['build-default', 'build-crazy', 'nunjucks'], function() {
