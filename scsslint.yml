@@ -1,0 +1,13 @@
+exclude: '_pygments.scss'
+
+linters:
+  Indentation:
+    width: 2
+  #Comment:
+    #allowed: '[\s\S]*'
+  NestingDepth:
+    max_depth: 5
+  NameFormat:
+    enabled: false
+  Comment:
+    enabled: false

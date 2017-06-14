@@ -1,0 +1,28 @@
+/* Bootstrap 4 Theme by HackerThemes */
+
+
+$border-radius: 0;
+$brand-primary: fuchsia;
+$brand-secondary: blue;
+$brand-success: green;
+$brand-info: turquoise;
+$brand-warning: orange;
+$brand-danger: red;
+
+$body-bg:       black;
+$body-color:    lawngreen;
+$list-group-bg:  darkgrey;
+
+.test {
+color: green;
+}
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+// Added Theme styles, eye candy maybe
+
+
+.ht-header {
+  background: black;
+
+}
