@@ -8,6 +8,7 @@ var gulp  = require('gulp'),
     postcss      = require('gulp-postcss'),
     lazypipe = require('lazypipe'),
     rename = require('gulp-rename'),
+    nunjucks = require('gulp-nunjucks'),
     autoprefixer = require('autoprefixer');
 
 // Lazypipes to define some standard built pipes that every theme goes through
@@ -53,10 +54,24 @@ gulp.task('build-crazy', function() {
     .pipe(gulp.dest('themes/crazy/css/'))
 });
 
+gulp.task('nunjucks', function() {
+  gulp.src('nunjucks/index.html')
+      .pipe(nunjucks.compile({"css": "bootstrap4-crazy-theme.css",
+                              "title": "Crazy"}))
+      .pipe(gulp.dest('themes/crazy/'));
+
+  gulp.src('nunjucks/index.html')
+      .pipe(nunjucks.compile({"css": "bootstrap4-default-theme.css",
+                              "title": "Default"}))
+      .pipe(gulp.dest('themes/default/'))
+  }
+);
+
 gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/default/css/*.scss'], ['build-default']);
   gulp.watch(['themes/crazy/css/*.scss'], ['build-crazy']);
+  gulp.watch(['nunjucks/*.html'], ['nunjucks']);
 });
 
-gulp.task('default', ['build-default', 'build-crazy'], function() {
+gulp.task('default', ['build-default', 'build-crazy', 'nunjucks'], function() {
 });
