@@ -13,16 +13,5 @@ $body-bg:       black;
 $body-color:    lawngreen;
 $list-group-bg:  darkgrey;
 
-.test {
-color: green;
-}
-
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
-// Added Theme styles, eye candy maybe
-
-
-.ht-header {
-  background: black;
-
-}
