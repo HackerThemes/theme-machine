@@ -10,8 +10,10 @@
   "author": "Alexander Rechsteiner (HackerThemes.com)",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "gulp": "^3.9.1"
+    "bootstrap": "^4.0.0-beta",
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
