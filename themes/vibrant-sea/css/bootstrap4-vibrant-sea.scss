@@ -1,19 +1,102 @@
 /* Bootstrap 4 Theme by HackerThemes */
 
-$border-radius: 5;
+$border-radius: 10px;
+$border-radius-lg: 10px;
 
-$body-bg: #080f23;
-$body-color: #efff8c;
+//$body-bg: #080f23;
+$body-color: #171717;
+
+
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $theme-colors: (
-  primary: #ff5df1,
-  secondary: #ffe355,
-  success: #66ff58,
-  info: #473eff,
-  warning: #ff8420,
-  danger: #ff0855,
-  light: #bad6ff,
-  dark: #110e2b
-) !default;
+  primary: #0F90FF,
+  secondary: #10C1F2,
+  success: #31E68E,
+  info: #1B5FC3,
+  warning: #FFC25B,
+  danger: #E5364D,
+  light: #DBEBFB,
+  dark: #021127
+);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+
+@import '../../../scss/common';
+
+// Vibrant Sea
+$button-shadow-colors: (
+  primary: #0871CB,
+  secondary: #5BCFEF,
+  success: #1FA866,
+  info: #1250AB,
+  warning: #FFC25B,
+  danger: #E5364D,
+  light: #DBEBFB,
+  dark: #021127
+);
+
+
+@mixin btn-shadow($color) {
+  &,
+  &.focus,
+  &:focus {
+    box-shadow:
+                -4px -4px 0 $color,
+                -3px -3px 0 $color,
+                -2px -2px 0 $color,
+                -1px -1px 0 $color
+    ;
+    //border-color: $color;
+  }
+
+  &:hover {
+    box-shadow:
+      -7px -7px 0 $color,
+      -6px -6px 0 $color,
+      -5px -5px 0 $color,
+      -4px -4px 0 $color,
+      -3px -3px 0 $color,
+      -2px -2px 0 $color,
+      -1px -1px 0 $color;
+    transform: translate(3px, 3px);
+    transition: all .3s ease;
+  }
+
+  &:active {
+    box-shadow: none;
+    transform: translate(-4px, -4px) !important;
+    transition: all .1s ease;
+  }
+  transition: none;
+}
+
+
+
+.btn-shadow {
+  margin-left: 8px;
+
+  @each $color, $value in $button-shadow-colors {
+    &.btn-#{$color} {
+      @include btn-shadow($value);
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    &.btn-#{$color} {
+      &:hover {
+        background-color: $value;
+        border-color: $value;
+      }
+    }
+  }
+}
+
+
+.btn-outline-primary.btn-shadow {
+  &,
+  &.focus,
+  &:focus {
+    box-shadow: -3px -3px 0 #0871CB;
+  }
+}
