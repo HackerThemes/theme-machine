@@ -46,14 +46,6 @@ gulp.task('build-default', function() {
 
 });
 
-gulp.task('build-crazy', function() {
-  return gulp.src(['themes/crazy/css/*.scss'])
-    .pipe(buildBootstrap())
-    .pipe(gulp.dest('dist/crazy/css/'))
-    .pipe(minifyCss())
-    .pipe(gulp.dest('dist/crazy/css/'))
-});
-
 gulp.task('build-vibrant-sea', function() {
   return gulp.src(['themes/vibrant-sea/css/*.scss'])
     .pipe(buildBootstrap())
@@ -62,16 +54,25 @@ gulp.task('build-vibrant-sea', function() {
     .pipe(gulp.dest('dist/vibrant-sea/css/'))
 });
 
+gulp.task('build-neon-glow', function() {
+  return gulp.src(['themes/neon-glow/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/neon-glow/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/neon-glow/css/'))
+});
+
+
 // nunjucks.configure({autoescape: true});
 
 gulp.task('nunjucks', function() {
-  gulp.src('themes/crazy/*.html')
-      .pipe(nunjucks())
-      .pipe(gulp.dest('dist/crazy/'));
-
   gulp.src('themes/vibrant-sea/*.html')
     .pipe(nunjucks())
     .pipe(gulp.dest('dist/vibrant-sea/'));
+
+  gulp.src('themes/neon-glow/*.html')
+    .pipe(nunjucks())
+    .pipe(gulp.dest('dist/neon-glow/'));
 
   gulp.src('themes/default/*.html')
       .pipe(nunjucks())
@@ -81,10 +82,10 @@ gulp.task('nunjucks', function() {
 
 gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/default/css/*.scss'], ['build-default']);
-  gulp.watch(['themes/crazy/css/*.scss'], ['build-crazy']);
   gulp.watch(['themes/vibrant-sea/css/*.scss'], ['build-vibrant-sea']);
+  gulp.watch(['themes/neon-glow/css/*.scss'], ['build-neon-glow']);
   gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
-gulp.task('default', ['build-default', 'build-crazy', 'build-vibrant-sea', 'nunjucks'], function() {
+gulp.task('default', ['build-default', 'build-neon-glow', 'build-vibrant-sea', 'nunjucks'], function() {
 });
