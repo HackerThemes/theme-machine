@@ -1,21 +1,21 @@
 /* Bootstrap 4 Theme by HackerThemes */
 
 // Bootstrap variables are (or should be) marked with //BS
-$border-radius: 10px; //BS
-$border-radius-lg: 10px; //BS
+$border-radius: 5px; //BS
+$border-radius-lg: 5px; //BS
 
-//$body-bg: #080f23;
-$body-color: #171717; //BS
+$body-bg: #0C0D16; //BS
+$body-color: #A0A3A0; //BS
 
 $font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //BS
 
 $theme-colors: (
-  primary: #ff6ad7,
+  primary: #17B06B,
   secondary: #f215ae,
   success: #31E68E,
   info: #1B5FC3,
   warning: #FFC25B,
-  danger: #e5053c,
+  danger: #FF506E,
   light: #DBEBFB,
   dark: #021127
 ); //BS
@@ -27,16 +27,16 @@ $theme-colors: (
 @import '../../../scss/common';
 
 // Vibrant Sea
-$font-family-display: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-display: "Hack", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $button-shadow-colors: (
   //TODO: colors
-  primary: #0871CB,
+  primary: #77B979,
   secondary: #5BCFEF,
   success: #1FA866,
   info: #1250AB,
   warning: #FFC25B,
-  danger: #E5364D,
+  danger: #F92359,
   light: #DBEBFB,
   dark: #021127
 );
@@ -47,30 +47,27 @@ $button-shadow-colors: (
   &.focus,
   &:focus {
     box-shadow:
-                -4px -4px 0 $color,
-                -3px -3px 0 $color,
-                -2px -2px 0 $color,
-                -1px -1px 0 $color
+                3px 3px 0 $color,
+                2px 2px 0 $color,
+                1px 1px 0 $color
     ;
     //border-color: $color;
   }
 
   &:hover {
     box-shadow:
-      -7px -7px 0 $color,
-      -6px -6px 0 $color,
-      -5px -5px 0 $color,
-      -4px -4px 0 $color,
-      -3px -3px 0 $color,
-      -2px -2px 0 $color,
-      -1px -1px 0 $color;
-    transform: translate(3px, 3px);
+      5px 5px 0 $color,
+      4px 4px 0 $color,
+      3px 3px 0 $color,
+      2px 2px 0 $color,
+      1px 1px 0 $color;
+    transform: translate(-2px, -2px);
     transition: all .3s ease;
   }
 
   &:active {
     box-shadow: none;
-    transform: translate(-4px, -4px) !important;
+    transform: translate(4px, 4px) !important;
     transition: all .1s ease;
   }
   transition: none;
@@ -111,8 +108,8 @@ $button-shadow-colors: (
 .display-3,
 .display-4 {
   font-family: $font-family-display;
-  text-transform: uppercase;
-  font-weight: 400;
+  //text-transform: uppercase;
+  //font-weight: 400;
 
   .text-white &,
   &.text-white {
@@ -120,11 +117,23 @@ $button-shadow-colors: (
   }
 }
 
-.display-1 {
-
-}
-
 .text-reduced-opacity {
   opacity: .5;
+}
 
+.btn-success {
+  color: #C1F8C2;
+}
+
+
+.vim-caret {
+  animation: vimCaret 1s linear infinite;
+}
+
+
+@keyframes vimCaret {
+  0% { background-color: transparent; }
+  49% {  background-color: transparent; }
+  50% { background-color: rgba(255, 255, 255, .2); }
+  100% { background-color: rgba(255, 255, 255, .2); }
 }

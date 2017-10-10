@@ -80,20 +80,36 @@ $button-shadow-colors: (
   margin-left: 8px;
 
   @each $color, $value in $button-shadow-colors {
-    &.btn-#{$color},
+    &.btn-#{$color} {
+      @include btn-shadow($value);
+    }
     &.btn-outline-#{$color} {
       @include btn-shadow($value);
     }
   }
 
   @each $color, $value in $theme-colors {
-    &.btn-#{$color},
-    &.btn-outline-#{$color} {
+    &.btn-#{$color} {
       &:hover {
         background-color: $value;
         border-color: $value;
       }
     }
+
+    &.btn-outline-#{$color} {
+      //@include btn-shadow($value);
+
+      border-color: $value;
+      color: $value;
+
+      &:hover {
+        background-color: #fff;
+        color: $value;
+
+      }
+    }
+
+
   }
 }
 //
