@@ -4,6 +4,10 @@
 
 This project includes all the Free and Open Source Bootstrap 4 themes on HackerThemes.com. Each folder under `/dist/` is it's own theme, which includes a small starter template for the default template as well.
 
+## Getting started
+
+You can either clone this entire repository and use the themes under `/dist/`, or head download the [Bootstrap Themes](https://hackerthemes.com) individually on our website.
+
 ## Build steps
 
 To build and modify the themes, you'll need to use npm and gulp. On Ubuntu (and hopefully other systems :-) you can do:
