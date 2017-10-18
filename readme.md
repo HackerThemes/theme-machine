@@ -1,4 +1,4 @@
-### Bootstrap 4 Theme Machine
+# Bootstrap 4 Theme Machine
 
 ## A collection of stylized Bootstrap 4 Themes by HackerThemes
 
