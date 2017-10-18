@@ -37,15 +37,6 @@ var minifyCss = lazypipe()
 // Note: The build tasks can't be 100% dry for performance reasons as each build
 //       takes about 1 second. Would add up if I rebuilt every folder on each change
 
-gulp.task('build-default', function() {
-  return gulp.src(['themes/default/css/*.scss'])
-    .pipe(buildBootstrap())
-    .pipe(gulp.dest('dist/default/css/'))
-    .pipe(minifyCss())
-    .pipe(gulp.dest('dist/default/css/'))
-
-});
-
 gulp.task('build-vibrant-sea', function() {
   return gulp.src(['themes/vibrant-sea/css/*.scss'])
     .pipe(buildBootstrap())
@@ -61,7 +52,6 @@ gulp.task('build-neon-glow', function() {
     .pipe(minifyCss())
     .pipe(gulp.dest('dist/neon-glow/css/'))
 });
-
 
 // nunjucks.configure({autoescape: true});
 
@@ -81,11 +71,10 @@ gulp.task('nunjucks', function() {
 );
 
 gulp.task('watch', ['default'], function() {
-  gulp.watch(['themes/default/css/*.scss'], ['build-default']);
   gulp.watch(['themes/vibrant-sea/css/*.scss'], ['build-vibrant-sea']);
   gulp.watch(['themes/neon-glow/css/*.scss'], ['build-neon-glow']);
   gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
-gulp.task('default', ['build-default', 'build-neon-glow', 'build-vibrant-sea', 'nunjucks'], function() {
+gulp.task('default', ['build-neon-glow', 'build-vibrant-sea', 'nunjucks'], function() {
 });
