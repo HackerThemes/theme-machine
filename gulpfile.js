@@ -57,11 +57,11 @@ gulp.task('build-neon-glow', function() {
 
 gulp.task('nunjucks', function() {
   gulp.src('themes/vibrant-sea/*.html')
-    .pipe(nunjucks())
+    .pipe(nunjucks({data:{title:"Vibrant Sea"}}))
     .pipe(gulp.dest('dist/vibrant-sea/'));
 
   gulp.src('themes/neon-glow/*.html')
-    .pipe(nunjucks())
+    .pipe(nunjucks({data:{title:"Neon Glow"}}))
     .pipe(gulp.dest('dist/neon-glow/'));
 
   gulp.src('themes/default/*.html')
