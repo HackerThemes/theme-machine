@@ -1,23 +1,25 @@
 /*! Bootstrap 4 "Neon Glow" Theme by HackerThemes, https://hackerthemes.com */
 
-// Bootstrap variables are (or should be) marked with //BS
-$border-radius: 5px; //BS
-$border-radius-lg: 5px; //BS
+$border-radius: 6px;
+$border-radius-lg: 6px;
 
-$body-bg: #0C0D16; //BS
-$body-color: #A0A3A0; //BS
+$body-bg: #0C0D16;
+$body-color: #e4e2ff;
 
 $font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //BS
 
+$dark: #32334a;
+$black: #000;
+
 $theme-colors: (
-  primary: #42d9ac,
-  secondary: #10C1F2,
+  primary: #714cdf,
+  secondary: #16a4de,
   success: #17B06B,
-  info: #28B6FE,
+  info: #2983fe,
   warning: #f97515,
   danger: #ff3c5c,
   light: #DBEBFB,
-  dark: #09081c
+  dark: $dark
 );
 
 $display1-size: 4.5rem !default;
@@ -25,6 +27,166 @@ $display2-size: 3.5rem !default;
 $display3-size: 2.5rem !default;
 $display4-size: 2rem !default;
 
+$card-cap-bg: #1e2037;
+$card-bg:                  #32334a;
+$card-border-color: #151623;
+
+// Bootstrap's Grayscale
+$white:    #fff !default;
+$gray-100: #2d2e3f !default;
+$gray-200: #282a38 !default;
+$gray-300: #28293e !default;
+$gray-400: #28293e !default;
+$gray-500: #1c1d2c !default;
+$gray-600: #1d1e2f !default;
+$gray-700: #151623 !default;
+$gray-800: #11111d !default;
+$gray-900: #0a0b14 !default;
+$black:  #000 !default;
+
+
+$custom-control-indicator-bg:        $gray-700;
+$nav-tabs-border-color:                        $gray-700;
+$nav-tabs-link-active-border-color:           $gray-700;
+$pagination-border-color:              $gray-700;
+$pagination-hover-border-color:       $gray-700;
+$pagination-disabled-border-color:     $gray-700;
+$thumbnail-border-color:      $gray-700;
+
+/* List of color variables that arent in theme colors */
+
+//<editor-fold desc="Direct # colors">
+//$mark-bg: #fcf8e3 !default;
+//$custom-control-indicator-bg:         #ddd !default;
+//$custom-select-indicator-color: #333 !default;
+//$nav-tabs-border-color:                       #ddd !default;
+//$nav-tabs-link-active-border-color:           #ddd !default;
+//$pagination-border-color:              #ddd !default;
+//$pagination-hover-border-color:        #ddd !default;
+//$pagination-disabled-border-color:     #ddd !default;
+//$thumbnail-border-color:      #ddd !default;
+$code-color:                  #2983fe !default;
+//</editor-fold>
+
+//<editor-fold desc="White">
+$component-active-color: $dark !default;
+$table-inverse-accent-bg:       rgba($dark, .05) !default;
+$table-inverse-hover-bg:        rgba($dark, .075) !default;
+$btn-box-shadow:                 inset 0 1px 0 rgba($dark,.15), 0 1px 1px rgba($black,.075) !default;
+$input-bg:                       $gray-400 !default;
+$custom-control-indicator-checked-color:      $dark !default;
+$custom-control-indicator-active-color:      $dark !default;
+$custom-select-bg:            $dark !default;
+$custom-file-focus-box-shadow: 0 0 0 .075rem $dark, 0 0 0 .2rem theme-color("primary") !default;
+$dropdown-bg:                    $dark !default;
+$navbar-dark-color:                 rgba($dark,.5) !default;
+$navbar-dark-hover-color:           rgba($dark,.75) !default;
+$navbar-dark-active-color:          rgba($dark,1) !default;
+$navbar-dark-disabled-color:        rgba($dark,.25) !default;
+$navbar-dark-toggler-border-color:  rgba($dark,.1) !default;
+$pagination-bg:                        $dark !default;
+$pagination-active-color:              $white !default;
+$pagination-disabled-bg:               $dark !default;
+$card-bg:                  $dark !default;
+$tooltip-color:               $body-color !default;
+$popover-bg:                          $dark !default;
+$badge-color:                 $dark !default;
+$modal-content-bg:               $dark !default;
+$progress-bar-color:            $dark !default;
+$list-group-bg:                  $dark !default;
+$carousel-control-color:                      $dark !default;
+$carousel-indicator-active-bg:                $dark !default;
+$carousel-caption-color:                      $dark !default;
+$close-text-shadow:           0 1px 0 $dark !default;
+$kbd-color:                   $dark !default;
+//</editor-fold>
+
+//black
+//<editor-fold desc="black">
+//$hr-border-color: rgba($black,.1) !default;
+//$kbd-box-shadow:         inset 0 -.1rem 0 rgba($black,.25) !default;
+//$table-accent-bg:               rgba($black,.05) !default;
+//$table-hover-bg:                rgba($black,.075) !default;
+//$btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
+//$btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
+$input-border-color:             $gray-800;
+//$input-box-shadow:               inset 0 1px 1px rgba($black,.075) !default;
+//$custom-control-indicator-box-shadow: inset 0 .25rem .25rem rgba($black,.1) !default;
+////$custom-select-focus-box-shadow:   inset 0 1px 2px rgba($black, .075), 0 0 5px rgba($custom-select-focus-border-color, .5) !default;
+//$dropdown-border-color:          rgba($black,.15) !default;
+//$dropdown-box-shadow:            0 .5rem 1rem rgba($black,.175) !default;
+//$navbar-light-color:                rgba($black,.5) !default;
+//$navbar-light-hover-color:          rgba($black,.7) !default;
+//$navbar-light-active-color:         rgba($black,.9) !default;
+//$navbar-light-disabled-color:       rgba($black,.3) !default;
+//$navbar-light-toggler-border-color: rgba($black,.1) !default;
+//$card-border-color:        rgba($black,.125) !default;
+//$card-cap-bg:              rgba($black, .03) !default;
+//$tooltip-bg:                  $black !default;
+//$popover-border-color:                rgba($black,.2) !default;
+//$popover-box-shadow:                  0 5px 10px rgba($black,.2) !default;
+//$modal-content-border-color:     rgba($black,.2) !default;
+//$modal-content-box-shadow-xs:    0 3px 9px rgba($black,.5) !default;
+//$modal-content-box-shadow-sm-up: 0 5px 15px rgba($black,.5) !default;
+//$modal-backdrop-bg:           $black !default;
+//$progress-box-shadow:           inset 0 .1rem .1rem rgba($black,.1) !default;
+//$list-group-border-color:        rgba($black,.125) !default;
+//$thumbnail-box-shadow:        0 1px 2px rgba($black,.075) !default;
+//$close-color:                 $black !default;
+//</editor-fold>
+
+//<editor-fold desc="grays">
+//$body-color:    $gray-900 !default;
+//$border-color: $gray-200 !default;
+$text-muted: #81839a !default;
+$blockquote-small-color:  $text-muted !default;
+//$table-border-color:            $gray-200 !default;
+//$table-head-bg:                 $gray-200 !default;
+//$table-head-color:              $gray-700 !default;
+//$table-inverse-bg:              $gray-900 !default;
+//$table-inverse-border-color:    lighten($gray-900, 7.5%) !default;
+//$btn-link-disabled-color:        $gray-600 !default;
+//$input-disabled-bg:              $gray-200 !default;
+$input-color: #adabc6 !default;
+$input-placeholder-color: #a19fb9 !default;
+//$input-group-addon-bg:           $gray-200 !default;
+//$custom-control-indicator-disabled-bg:       $gray-200 !default;
+//$custom-control-description-disabled-color:  $gray-600 !default;
+//$custom-select-disabled-color:      $gray-600 !default;
+//$custom-select-disabled-bg:   $gray-200 !default;
+//$dropdown-divider-bg:            $gray-200 !default;
+//$dropdown-link-color:            $gray-900 !default;
+//$dropdown-link-hover-color:      darken($gray-900, 5%) !default;
+//$dropdown-link-hover-bg:         $gray-100 !default;
+//$dropdown-link-disabled-color:   $gray-600 !default;
+//$dropdown-header-color:          $gray-600 !default;
+//$nav-link-disabled-color:       $gray-600 !default;
+//$nav-tabs-link-hover-border-color:            $gray-200 !default;
+$nav-tabs-link-active-color:                  $body-color !default;
+//$pagination-hover-bg:                  $gray-200 !default;
+$pagination-disabled-color:            $gray-800 !default;
+//$jumbotron-bg:                   $gray-200 !default;
+//$modal-header-border-color:   $gray-200 !default;
+//$progress-bg:                   $gray-200 !default;
+$list-group-hover-bg:                 $gray-100 !default;
+//$list-group-disabled-color:      $gray-600 !default;
+$list-group-action-color:             $body-color !default;
+//$list-group-action-active-bg:         fuchsia !default;
+//$figure-caption-color:     $gray-600 !default;
+//$breadcrumb-bg:                 $gray-200 !default;
+//$breadcrumb-divider-color:      $gray-600 !default;
+//$breadcrumb-active-color:       $gray-600 !default;
+//$code-bg:                     $gray-100 !default;
+//$kbd-bg:                      $gray-900 !default;
+//$pre-color:                   $gray-900 !default;
+//</editor-fold>
+
+//<editor-fold desc="body-bg">
+$table-inverse-color:           $body-color;
+//$custom-control-indicator-focus-box-shadow: 0 0 0 1px $body-bg, 0 0 0 3px theme-color("primary") !default;
+//$nav-tabs-link-active-bg:                     $body-bg !default;
+//$thumbnail-bg:                $body-bg !default;
+//</editor-fold>
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
@@ -35,14 +197,14 @@ $display4-size: 2rem !default;
 $font-family-display: "Hack", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $button-shadow-colors: (
-  primary: #63dfd8,
-  secondary: #0d9fc7,
-  success: #1ccb76,
+  primary: #986edf,
+  secondary: #87c4f2,
+  success: #43cb8e,
   info: #25a8eb,
   warning: #F99511,
-  danger: #ff3c5c,
-  light: #b4c1ce,
-  dark: #1f2239
+  danger: #ff707f,
+  light: #9ea9b6,
+  dark: #191a2d
 );
 
 @mixin btn-shadow($color) {
@@ -129,14 +291,12 @@ body {
   color: #272738;
 }
 
-.text-spacey {
-  line-height: 28px;
+.text-mono {
+  font-family: $font-family-display;
 }
 
-
-.display-5 {
-
-
+.text-spacey {
+  line-height: 28px;
 }
 
 .btn-success {
@@ -153,7 +313,6 @@ body {
   animation: vimCaret 1s linear infinite;
 }
 
-
 @keyframes vimCaret {
   0% { background-color: transparent; }
   49% {  background-color: transparent; }
@@ -161,7 +320,31 @@ body {
   100% { background-color: rgba(255, 255, 255, .2); }
 }
 
+// Regenerate list group items
+@each $color, $value in $theme-colors {
+  @include list-group-item-variant($color, theme-color-level($color, -2), theme-color-level($color, 6));
+}
 
-.text-mono {
-  font-family: $font-family-display;
+// Regenerate alerts
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    @include alert-variant(theme-color-level($color, -5), theme-color-level($color, -2), theme-color-level($color, 7));
+  }
+}
+
+// Regenerate table row variants
+@each $color, $value in $theme-colors {
+  @include table-row-variant($color, theme-color-level($color, -2));
+}
+
+
+// Evil robot
+.hal-9000 {
+  display: inline-block;
+  width:40px;
+  height: 40px;
+  border-radius: 90px;
+  background: #f9d080;
+  border: 12px #ff3c5c solid;
+  box-shadow: 0px 0px 40px rgb(255, 60, 92);
 }
