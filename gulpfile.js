@@ -46,6 +46,9 @@ gulp.task('build-vibrant-sea', function() {
 });
 
 gulp.task('build-neon-glow', function() {
+  gulp.src(['themes/neon-glow/images/*'])
+    .pipe(gulp.dest('dist/neon-glow/images/'))
+
   return gulp.src(['themes/neon-glow/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/neon-glow/css/'))

@@ -1,12 +1,10 @@
 /*! Bootstrap 4 "Vibrant Sea" Theme by HackerThemes, https://hackerthemes.com */
 
-// Bootstrap variables are (or should be) marked with //BS
-$border-radius: 10px; //BS
-$border-radius-lg: 10px; //BS
+// Bootstrap variables start
+$border-radius: 10px;
+$border-radius-lg: 10px;
 
-//$body-bg: #080f23;
-$body-color: #171717; //BS
-
+$body-color: #171717;
 $font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //BS
 
 $theme-colors: (
@@ -18,10 +16,16 @@ $theme-colors: (
   danger: #E5364D,
   light: #DBEBFB,
   dark: #021127
-); //BS
+);
+
+$code-color: #1265ba;
+$code-bg: #bdd3f3;
+
+// Bootstrap variables end: Import Bootstrap
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
+// Custom overrides
 
 // Common Theme Machine Stuff
 @import '../../../scss/common';
@@ -35,8 +39,8 @@ $button-shadow-colors: (
   secondary: #5BCFEF,
   success: #1FA866,
   info: #1250AB,
-  warning: #FFC25B,
-  danger: #E5364D,
+  warning: #ce954e,
+  danger: #b73348,
   light: #DBEBFB,
   dark: #021127
 );

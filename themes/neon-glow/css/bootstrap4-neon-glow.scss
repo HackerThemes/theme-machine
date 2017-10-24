@@ -10,18 +10,23 @@ $body-color: #A0A3A0; //BS
 $font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //BS
 
 $theme-colors: (
-  primary: #17B06B,
-  secondary: #f215ae,
-  success: #31E68E,
-  info: #1B5FC3,
-  warning: #FFC25B,
-  danger: #FF506E,
+  primary: #42d9ac,
+  secondary: #10C1F2,
+  success: #17B06B,
+  info: #28B6FE,
+  warning: #f97515,
+  danger: #ff3c5c,
   light: #DBEBFB,
-  dark: #021127
-); //BS
+  dark: #09081c
+);
+
+$display1-size: 4.5rem !default;
+$display2-size: 3.5rem !default;
+$display3-size: 2.5rem !default;
+$display4-size: 2rem !default;
+
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
-
 
 // Common Theme Machine Stuff
 @import '../../../scss/common';
@@ -30,19 +35,19 @@ $theme-colors: (
 $font-family-display: "Hack", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $button-shadow-colors: (
-  //TODO: colors
-  primary: #77B979,
-  secondary: #5BCFEF,
-  success: #1FA866,
-  info: #1250AB,
-  warning: #FFC25B,
-  danger: #F92359,
-  light: #DBEBFB,
-  dark: #021127
+  primary: #63dfd8,
+  secondary: #0d9fc7,
+  success: #1ccb76,
+  info: #25a8eb,
+  warning: #F99511,
+  danger: #ff3c5c,
+  light: #b4c1ce,
+  dark: #1f2239
 );
 
-
 @mixin btn-shadow($color) {
+  border-color: $color;
+
   &,
   &.focus,
   &:focus {
@@ -73,6 +78,10 @@ $button-shadow-colors: (
   transition: none;
 }
 
+body {
+  background-image: url("../images/ng-background-dot.png");
+}
+
 .btn-shadow {
   margin-left: 8px;
 
@@ -93,15 +102,6 @@ $button-shadow-colors: (
     }
   }
 }
-//
-//.btn-outline-primary.btn-shadow {
-//  &,
-//  &.focus,
-//  &:focus {
-//    box-shadow: -3px -3px 0 #0871CB;
-//  }
-//}
-
 
 .display-1,
 .display-2,
@@ -121,10 +121,33 @@ $button-shadow-colors: (
   opacity: .5;
 }
 
-.btn-success {
-  color: #C1F8C2;
+.text-grey {
+  color: #A0A3A0;
 }
 
+.text-darkblue {
+  color: #272738;
+}
+
+.text-spacey {
+  line-height: 28px;
+}
+
+
+.display-5 {
+
+
+}
+
+.btn-success {
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    color: #C1F8C2;
+  }
+
+}
 
 .vim-caret {
   animation: vimCaret 1s linear infinite;
@@ -136,4 +159,9 @@ $button-shadow-colors: (
   49% {  background-color: transparent; }
   50% { background-color: rgba(255, 255, 255, .2); }
   100% { background-color: rgba(255, 255, 255, .2); }
+}
+
+
+.text-mono {
+  font-family: $font-family-display;
 }
