@@ -230,6 +230,8 @@ $button-shadow-colors: (
       1px 1px 0 $color;
     transform: translate(-2px, -2px);
     transition: all .3s ease;
+    //border: 1px solid yellow;
+
   }
 
   &:active {
@@ -259,7 +261,7 @@ body {
     &.btn-outline-#{$color} {
       &:hover {
         background-color: $value;
-        border-color: $value;
+        //border-color: $value;
       }
     }
   }
