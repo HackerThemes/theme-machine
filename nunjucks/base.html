@@ -6,12 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{%if title %}{{title}} - Bootstrap 4 Theme{%else%}Bootstrap 4 Starter Template{%endif%}</title>
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     {% block stylesheet %}
     {% endblock %}
   </head>
   <body>
-    {% block content %}
-    {% endblock %}
+
+  {% block content %}
+  <div class="container">
+    <div class="py-5">
+      <h1>Bootstrap 4 Theme</h1>
+      <p>
+        This is minimal Bootstrap 4 Starter template.
+      </p>
+
+      <a href="#!" class="btn btn-primary">Default Button</a>
+
+      <a href="#!" class="btn btn-outline-primary">Outline Button</a>
+    </div>
+  </div>
+  {% endblock %}
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
