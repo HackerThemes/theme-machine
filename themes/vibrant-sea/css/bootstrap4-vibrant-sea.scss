@@ -5,16 +5,16 @@ $border-radius: 10px;
 $border-radius-lg: 10px;
 
 $body-color: #171717;
-$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //BS
+$font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; //BS
 
 $theme-colors: (
-  primary: #0F90FF,
-  secondary: #10C1F2,
-  success: #31E68E,
-  info: #1B5FC3,
-  warning: #FFC25B,
-  danger: #E5364D,
-  light: #DBEBFB,
+  primary: #0f90ff,
+  secondary: #10c1f2,
+  success: #31e68e,
+  info: #1b5fc3,
+  warning: #ffc25b,
+  danger: #e5364d,
+  light: #dbebfb,
   dark: #021127
 );
 
@@ -31,43 +31,40 @@ $code-bg: #bdd3f3;
 @import '../../../scss/common';
 
 // Vibrant Sea
-$font-family-display: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-display: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $button-shadow-colors: (
   //TODO: colors
-  primary: #0871CB,
-  secondary: #5BCFEF,
-  success: #1FA866,
-  info: #1250AB,
+  primary: #0871cb,
+  secondary: #5bcfef,
+  success: #1fa866,
+  info: #1250ab,
   warning: #ce954e,
   danger: #b73348,
-  light: #DBEBFB,
+  light: #dbebfb,
   dark: #021127
 );
 
-
 @mixin btn-shadow($color) {
+  transition: none;
+
   &,
   &.focus,
   &:focus {
-    box-shadow:
-                -4px -4px 0 $color,
+    box-shadow: -4px -4px 0 $color,
                 -3px -3px 0 $color,
                 -2px -2px 0 $color,
-                -1px -1px 0 $color
-    ;
-    //border-color: $color;
+                -1px -1px 0 $color;
   }
 
   &:hover {
-    box-shadow:
-      -7px -7px 0 $color,
-      -6px -6px 0 $color,
-      -5px -5px 0 $color,
-      -4px -4px 0 $color,
-      -3px -3px 0 $color,
-      -2px -2px 0 $color,
-      -1px -1px 0 $color;
+    box-shadow: -7px -7px 0 $color,
+                -6px -6px 0 $color,
+                -5px -5px 0 $color,
+                -4px -4px 0 $color,
+                -3px -3px 0 $color,
+                -2px -2px 0 $color,
+                -1px -1px 0 $color;
     transform: translate(3px, 3px);
     transition: all .3s ease;
   }
@@ -77,7 +74,6 @@ $button-shadow-colors: (
     transform: translate(-4px, -4px) !important;
     transition: all .1s ease;
   }
-  transition: none;
 }
 
 .btn-shadow {
@@ -87,6 +83,7 @@ $button-shadow-colors: (
     &.btn-#{$color} {
       @include btn-shadow($value);
     }
+
     &.btn-outline-#{$color} {
       @include btn-shadow($value);
     }
@@ -112,8 +109,6 @@ $button-shadow-colors: (
 
       }
     }
-
-
   }
 }
 
@@ -122,20 +117,15 @@ $button-shadow-colors: (
 .display-3,
 .display-4 {
   font-family: $font-family-display;
-  text-transform: uppercase;
   font-weight: 400;
+  text-transform: uppercase;
 
   .text-white &,
   &.text-white {
-    text-shadow: -1px -1px rgba(255,255,255,.2);
+    text-shadow: -1px -1px rgba(255, 255, 255, .2);
   }
-}
-
-.display-1 {
-
 }
 
 .text-reduced-opacity {
   opacity: .5;
-
 }

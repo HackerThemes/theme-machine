@@ -3,10 +3,10 @@
 $border-radius: 6px;
 $border-radius-lg: 6px;
 
-$body-bg: #0C0D16;
+$body-bg: #0c0d16;
 $body-color: #e4e2ff;
 
-$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //BS
+$font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; //BS
 
 $dark: #32334a;
 $black: #000;
@@ -14,11 +14,11 @@ $black: #000;
 $theme-colors: (
   primary: #714cdf,
   secondary: #16a4de,
-  success: #17B06B,
+  success: #17b06b,
   info: #2983fe,
   warning: #f97515,
   danger: #ff3c5c,
-  light: #DBEBFB,
+  light: #dbebfb,
   dark: $dark
 );
 
@@ -71,18 +71,18 @@ $code-color:                  #2983fe !default;
 $component-active-color: $dark !default;
 $table-inverse-accent-bg:       rgba($dark, .05) !default;
 $table-inverse-hover-bg:        rgba($dark, .075) !default;
-$btn-box-shadow:                 inset 0 1px 0 rgba($dark,.15), 0 1px 1px rgba($black,.075) !default;
+$btn-box-shadow:                 inset 0 1px 0 rgba($dark, .15), 0 1px 1px rgba($black, .075) !default;
 $input-bg:                       $gray-400 !default;
 $custom-control-indicator-checked-color:      $dark !default;
 $custom-control-indicator-active-color:      $dark !default;
 $custom-select-bg:            $dark !default;
-$custom-file-focus-box-shadow: 0 0 0 .075rem $dark, 0 0 0 .2rem theme-color("primary") !default;
+$custom-file-focus-box-shadow: 0 0 0 .075rem $dark, 0 0 0 .2rem theme-color('primary') !default;
 $dropdown-bg:                    $dark !default;
-$navbar-dark-color:                 rgba($dark,.5) !default;
-$navbar-dark-hover-color:           rgba($dark,.75) !default;
-$navbar-dark-active-color:          rgba($dark,1) !default;
-$navbar-dark-disabled-color:        rgba($dark,.25) !default;
-$navbar-dark-toggler-border-color:  rgba($dark,.1) !default;
+$navbar-dark-color:                 rgba($dark, .5) !default;
+$navbar-dark-hover-color:           rgba($dark, .75) !default;
+$navbar-dark-active-color:          rgba($dark, 1) !default;
+$navbar-dark-disabled-color:        rgba($dark, .25) !default;
+$navbar-dark-toggler-border-color:  rgba($dark, .1) !default;
 $pagination-bg:                        $dark !default;
 $pagination-active-color:              $white !default;
 $pagination-disabled-bg:               $dark !default;
@@ -193,14 +193,14 @@ $table-inverse-color:           $body-color;
 @import '../../../scss/common';
 
 // Vibrant Sea
-$font-family-display: "Hack", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-display: 'Hack', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
 $button-shadow-colors: (
   primary: #986edf,
   secondary: #87c4f2,
   success: #43cb8e,
   info: #25a8eb,
-  warning: #F99511,
+  warning: #f99511,
   danger: #ff707f,
   light: #9ea9b6,
   dark: #191a2d
@@ -208,25 +208,22 @@ $button-shadow-colors: (
 
 @mixin btn-shadow($color) {
   border-color: $color;
+  transition: none;
 
   &,
   &.focus,
   &:focus {
-    box-shadow:
-                3px 3px 0 $color,
+    box-shadow: 3px 3px 0 $color,
                 2px 2px 0 $color,
-                1px 1px 0 $color
-    ;
-    //border-color: $color;
+                1px 1px 0 $color;
   }
 
   &:hover {
-    box-shadow:
-      5px 5px 0 $color,
-      4px 4px 0 $color,
-      3px 3px 0 $color,
-      2px 2px 0 $color,
-      1px 1px 0 $color;
+    box-shadow: 5px 5px 0 $color,
+                4px 4px 0 $color,
+                3px 3px 0 $color,
+                2px 2px 0 $color,
+                1px 1px 0 $color;
     transform: translate(-2px, -2px);
     transition: all .3s ease;
     //border: 1px solid yellow;
@@ -238,11 +235,11 @@ $button-shadow-colors: (
     transform: translate(4px, 4px) !important;
     transition: all .1s ease;
   }
-  transition: none;
+
 }
 
 body {
-  background-image: url("../images/ng-background-dot.png");
+  background-image: url('../images/ng-background-dot.png');
 }
 
 .btn-shadow {
@@ -276,7 +273,7 @@ body {
 
   .text-white &,
   &.text-white {
-    text-shadow: -1px -1px rgba(255,255,255,.2);
+    text-shadow: -1px -1px rgba(255, 255, 255, .2);
   }
 }
 
@@ -305,7 +302,7 @@ body {
   &:hover,
   &:focus,
   &:active {
-    color: #C1F8C2;
+    color: #c1f8c2;
   }
 
 }
@@ -341,11 +338,12 @@ body {
 
 // Evil robot
 .hal-9000 {
-  display: inline-block;
-  width:40px;
-  height: 40px;
-  border-radius: 90px;
   background: #f9d080;
   border: 12px #ff3c5c solid;
-  box-shadow: 0px 0px 40px rgb(255, 60, 92);
+  border-radius: 90px;
+  box-shadow: 0 0 40px rgb(255, 60, 92);
+  display: inline-block;
+  height: 40px;
+  width: 40px;
 }
+

@@ -11,3 +11,7 @@ linters:
     enabled: false
   Comment:
     enabled: false
+  ColorVariable:
+    enabled: false
+  ImportantRule:
+    enabled: false
