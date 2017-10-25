@@ -28,10 +28,10 @@ $display3-size: 2.5rem !default;
 $display4-size: 2rem !default;
 
 $card-cap-bg: #1e2037;
-$card-bg:                  #32334a;
+$card-bg: #32334a;
 $card-border-color: #151623;
 
-// Bootstrap's Grayscale
+// Darkening Bootstrap's grayscale considerably
 $white:    #fff !default;
 $gray-100: #2d2e3f !default;
 $gray-200: #282a38 !default;
@@ -43,7 +43,6 @@ $gray-700: #151623 !default;
 $gray-800: #11111d !default;
 $gray-900: #0a0b14 !default;
 $black:  #000 !default;
-
 
 $custom-control-indicator-bg:        $gray-700;
 $nav-tabs-border-color:                        $gray-700;
@@ -286,7 +285,7 @@ body {
 }
 
 .text-grey {
-  color: #A0A3A0;
+  color: #a0a0a0;
 }
 
 .text-darkblue {

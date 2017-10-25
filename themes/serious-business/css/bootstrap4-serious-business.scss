@@ -1,0 +1,43 @@
+/*! Bootstrap 4 "Serious Business" Theme by HackerThemes, https://hackerthemes.com */
+
+// Bootstrap variables start
+$border-radius: 0;
+$border-radius-lg: 0;
+
+$body-color: #171717;
+$font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; //BS
+
+$theme-colors: (
+  primary: #3b8df2,
+  secondary: #53c2ed,
+  success: #1FC06C,
+  info: #1B5FC3,
+  warning: #F29841,
+  danger: #EB2F2F,
+  dark: #011230,
+  light: #BFCFD9
+);
+
+$code-color: #1265ba;
+$code-bg: #bdd3f3;
+
+// Bootstrap variables end: Import Bootstrap
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+// Custom overrides
+
+// Common Theme Machine Stuff
+@import '../../../scss/common';
+
+
+
+.btn-outline-light {
+  &:hover {
+    background-color: rgba(255,255,255, .2);
+
+  }
+
+}
+
+

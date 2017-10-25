@@ -38,11 +38,22 @@ var minifyCss = lazypipe()
 //       takes about 1 second. Would add up if I rebuilt every folder on each change
 
 gulp.task('build-vibrant-sea', function() {
+  gulp.src(['themes/vibrant-sea/images/*'])
+    .pipe(gulp.dest('dist/vibrant-sea/images/'))
+
   return gulp.src(['themes/vibrant-sea/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/vibrant-sea/css/'))
     .pipe(minifyCss())
     .pipe(gulp.dest('dist/vibrant-sea/css/'))
+});
+
+gulp.task('build-serious-business', function() {
+  return gulp.src(['themes/serious-business/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/serious-business/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/serious-business/css/'))
 });
 
 gulp.task('build-neon-glow', function() {
@@ -63,6 +74,10 @@ gulp.task('nunjucks', function() {
     .pipe(nunjucks({data:{title:"Vibrant Sea"}}))
     .pipe(gulp.dest('dist/vibrant-sea/'));
 
+  gulp.src('themes/serious-business/*.html')
+    .pipe(nunjucks({data:{title:"Vibrant Sea"}}))
+    .pipe(gulp.dest('dist/serious-business/'));
+
   gulp.src('themes/neon-glow/*.html')
     .pipe(nunjucks({data:{title:"Neon Glow"}}))
     .pipe(gulp.dest('dist/neon-glow/'));
@@ -75,9 +90,10 @@ gulp.task('nunjucks', function() {
 
 gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/vibrant-sea/css/*.scss'], ['build-vibrant-sea']);
+  gulp.watch(['themes/serious-business/css/*.scss'], ['build-serious-business']);
   gulp.watch(['themes/neon-glow/css/*.scss'], ['build-neon-glow']);
   gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
-gulp.task('default', ['build-neon-glow', 'build-vibrant-sea', 'nunjucks'], function() {
+gulp.task('default', ['build-neon-glow','build-serious-business', 'build-vibrant-sea', 'nunjucks'], function() {
 });
