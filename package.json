@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A collection of free Bootstrap 4 themes by HackerThemes",
   "main": "index.js",
-  "repository": "https://bitbucket.org/arechsteiner/theme-machine/",
+  "repository": "https://github.com/HackerThemes/theme-machine",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
