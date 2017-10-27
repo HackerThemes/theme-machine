@@ -69,8 +69,8 @@ $code-color:                  #2983fe !default;
 
 //<editor-fold desc="White">
 $component-active-color: $dark !default;
-$table-inverse-accent-bg:       rgba($dark, .05) !default;
-$table-inverse-hover-bg:        rgba($dark, .075) !default;
+$table-dark-accent-bg:       rgba($dark, .05) !default;
+$table-dark-hover-bg:        rgba($dark, .075) !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba($dark, .15), 0 1px 1px rgba($black, .075) !default;
 $input-bg:                       $gray-400 !default;
 $custom-control-indicator-checked-color:      $dark !default;
@@ -89,7 +89,6 @@ $pagination-disabled-bg:               $dark !default;
 $card-bg:                  $dark !default;
 $tooltip-color:               $body-color !default;
 $popover-bg:                          $dark !default;
-$badge-color:                 $dark !default;
 $modal-content-bg:               $dark !default;
 $progress-bar-color:            $dark !default;
 $list-group-bg:                  $dark !default;
@@ -142,8 +141,8 @@ $blockquote-small-color:  $text-muted !default;
 //$table-border-color:            $gray-200 !default;
 //$table-head-bg:                 $gray-200 !default;
 //$table-head-color:              $gray-700 !default;
-//$table-inverse-bg:              $gray-900 !default;
-//$table-inverse-border-color:    lighten($gray-900, 7.5%) !default;
+//$table-dark-bg:              $gray-900 !default;
+//$table-dark-border-color:    lighten($gray-900, 7.5%) !default;
 //$btn-link-disabled-color:        $gray-600 !default;
 //$input-disabled-bg:              $gray-200 !default;
 $input-color: #adabc6 !default;
@@ -181,7 +180,7 @@ $list-group-action-color:             $body-color !default;
 //</editor-fold>
 
 //<editor-fold desc="body-bg">
-$table-inverse-color:           $body-color;
+$table-dark-color:           $body-color;
 //$custom-control-indicator-focus-box-shadow: 0 0 0 1px $body-bg, 0 0 0 3px theme-color("primary") !default;
 //$nav-tabs-link-active-bg:                     $body-bg !default;
 //$thumbnail-bg:                $body-bg !default;
