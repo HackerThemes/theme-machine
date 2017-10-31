@@ -2,13 +2,13 @@
 
 ## A collection of stylized Bootstrap 4 Themes by HackerThemes
 
-This project includes all the Free and Open Source Bootstrap 4 themes on HackerThemes.com. Each folder under `/dist/` is it's own theme, which includes a small starter template for the default template as well.
+This project includes all the free and open source Bootstrap 4 themes on HackerThemes.com. Each folder under `/dist/` is it's own theme, which includes a small starter template as well.
 
 Note: The source does not include the fancy code picker presentation form the website, as that stuff is entangled with the rest of the site. What you have here is simply everything you need to build, modify and use the themes themselves for your projects.
 
 ## Getting started
 
-You can either clone this entire repository and use the themes under `/dist/`, or head download the [Bootstrap Themes](https://hackerthemes.com) individually on our website.
+You can either clone this entire repository and use the themes under `/dist/`, or head download the [Bootstrap 4 themes](https://hackerthemes.com) individually on our website.
 
 ## Build steps
 
