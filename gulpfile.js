@@ -56,6 +56,14 @@ gulp.task('build-business-tycoon', function() {
     .pipe(gulp.dest('dist/business-tycoon/css/'))
 });
 
+gulp.task('build-charming', function() {
+  return gulp.src(['themes/charming/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/charming/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/charming/css/'))
+});
+
 gulp.task('build-neon-glow', function() {
   gulp.src(['themes/neon-glow/images/*'])
     .pipe(gulp.dest('dist/neon-glow/images/'))
@@ -75,8 +83,12 @@ gulp.task('nunjucks', function() {
     .pipe(gulp.dest('dist/vibrant-sea/'));
 
   gulp.src('themes/business-tycoon/*.html')
-    .pipe(nunjucks({data:{title:"Vibrant Sea"}}))
+    .pipe(nunjucks({data:{title:"Business Tycoon"}}))
     .pipe(gulp.dest('dist/business-tycoon/'));
+
+  gulp.src('themes/charming/*.html')
+    .pipe(nunjucks({data:{title:"Charming"}}))
+    .pipe(gulp.dest('dist/charming/'));
 
   gulp.src('themes/neon-glow/*.html')
     .pipe(nunjucks({data:{title:"Neon Glow"}}))
@@ -91,9 +103,10 @@ gulp.task('nunjucks', function() {
 gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/vibrant-sea/css/*.scss'], ['build-vibrant-sea']);
   gulp.watch(['themes/business-tycoon/css/*.scss'], ['build-business-tycoon']);
+  gulp.watch(['themes/charming/css/*.scss'], ['build-charming']);
   gulp.watch(['themes/neon-glow/css/*.scss'], ['build-neon-glow']);
   gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
-gulp.task('default', ['build-neon-glow','build-business-tycoon', 'build-vibrant-sea', 'nunjucks'], function() {
+gulp.task('default', ['build-neon-glow', 'build-charming', 'build-business-tycoon', 'build-vibrant-sea', 'nunjucks'], function() {
 });
