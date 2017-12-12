@@ -1,24 +1,29 @@
 /*! Bootstrap 4 "Charming" Theme by HackerThemes, https://hackerthemes.com */
 
 // Spacers
-//$spacer: .75rem !default; //12px //BS
+$spacer: .75rem !default; //12px //BS
 
-//$spacers: (
-//  0: 0,
-//  h: $spacer / 2,
-//  1: ($spacer),
-//  2: ($spacer * 2),
-//  3: ($spacer * 3),
-//  4: ($spacer * 4),
-//  5: ($spacer * 5),
-//  6: ($spacer * 6),
-//  7: ($spacer * 7),
-//  8: ($spacer * 8),
-//
-//) !default; //BS
+//$theme-colors: (
+//  accent-1: #31a742
+//);
 
-$primary: #31a742;
-$secondary: #353844;
+$theme-colors: (
+  "cool": #4d3fa3
+);
+
+$spacers: (
+  0: 0,
+  h: $spacer / 2,
+  1: ($spacer),
+  2: ($spacer * 2),
+  3: ($spacer * 3),
+  4: ($spacer * 4),
+  5: ($spacer * 5),
+  6: ($spacer * 6),
+  7: ($spacer * 7),
+  8: ($spacer * 8),
+
+) !default; //BS
 
 //Typography
 $font-family-sans-serif:   'Lato', Arial, sans-serif !default; // BS
@@ -86,7 +91,3 @@ $input-focus-border-color:   #898989 !default; //BS
 
 // Bootstrap variables end: Import Bootstrap
 @import '../../../node_modules/bootstrap/scss/bootstrap';
-
-
-// Common Theme Machine Stuff
-@import '../../../scss/common';

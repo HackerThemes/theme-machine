@@ -36,9 +36,6 @@ $display4-weight: 400;
   font-size: 1.15em;
 }
 
-// Common Theme Machine Stuff
-@import '../../../scss/common';
-
 .btn-outline-light {
   &:hover {
     background-color: rgba(255, 255, 255, .2);
