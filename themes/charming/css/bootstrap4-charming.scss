@@ -1,32 +1,36 @@
 /*! Bootstrap 4 "Charming" Theme by HackerThemes, https://hackerthemes.com */
+$body-color: #373a3c !default; //BS
+
+// Charming accents (more in _colors.scss)
+$accent-1: #31a742;
+$accent-2: #353844;
+$accent-3: #3b3b3b;
+
+// Adding accents to bootstrap
+$theme-colors: (
+  accent-1: $accent-1,
+  accent-2: $accent-2,
+  accent-3: $accent-3
+);
 
 // Spacers
-$spacer: .75rem !default; //12px //BS
-
-//$theme-colors: (
-//  accent-1: #31a742
-//);
-
-$theme-colors: (
-  "cool": #4d3fa3
-);
+$spacer: 1rem !default; //16px //BS
 
 $spacers: (
   0: 0,
-  h: $spacer / 2,
-  1: ($spacer),
-  2: ($spacer * 2),
-  3: ($spacer * 3),
-  4: ($spacer * 4),
-  5: ($spacer * 5),
-  6: ($spacer * 6),
-  7: ($spacer * 7),
-  8: ($spacer * 8),
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 3.75),
+  7: ($spacer * 4.5),
+  8: ($spacer * 6),
 
 ) !default; //BS
 
 //Typography
-$font-family-sans-serif:   'Lato', Arial, sans-serif !default; // BS
+//$font-family-sans-serif:   'Lato', Arial, sans-serif !default; // BS
 $line-height-base: 1.5 !default; // 24px // BS
 $line-height-lg: 1.44 !default; // 36px (from 25) // BS
 
@@ -87,7 +91,15 @@ $custom-control-indicator-focus-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #494
 $input-focus-border-color:   #898989 !default; //BS
 
 // Links
-//$link-color: accent(1, color) !default; //BS // TODO figure this out
+$link-color: $accent-1 !default; //BS
+
 
 // Bootstrap variables end: Import Bootstrap
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+
+// Charming stuff
+@import 'colors';
+@import 'mixins/mixins';
+@import 'mixins/colors';
+
+@import 'buttons';

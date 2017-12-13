@@ -1,0 +1,17 @@
+@mixin bg-gradient($gstart, $gstop) {
+  background: linear-gradient(to right, $gstart, $gstop);
+  background-color: mix($gstart, $gstop);
+}
+
+@mixin bg-gradient-vertical($gstart, $gstop) {
+  background: linear-gradient(to bottom, $gstart, $gstop);
+  background-color: mix($gstart, $gstop);
+}
+
+@mixin bg-color($color) {
+  background: $color;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}

@@ -1,0 +1,39 @@
+@mixin bevel($dark: true,
+             $has-bottom: true,
+             $bottom-strength: -1px
+             ) {
+  // Generates the three or one shadows for "rounded materials":
+  // One on top, one on bottom and one in the back
+
+  // $dark: use 'false' if using on a bright material
+  // $has-bottom: use 'false' if no bottom shadows are needed
+  // $bottom-strenght: vary the size of the bottom shadow
+
+  $inset-top-color: rgba(255, 255, 255, .30); //0.16
+  $inset-bottom-color: rgba(39, 39, 39, .22); //0.14
+  $drop-color:rgba(0, 0, 0, .22); //0.22
+
+  @if not($dark) { // for bright buttons
+    $inset-top-color: rgba(255, 255, 255, .8);
+    $inset-bottom-color: rgba(39, 39, 39, .10);
+    $drop-color: rgba(0, 0, 0, .05);
+  }
+
+
+  @if ($has-bottom) {
+    box-shadow: inset 0 1px 0 0 $inset-top-color,
+                inset 0 $bottom-strength 0 0 $inset-bottom-color,
+                0 1px 3px 0 $drop-color;
+  } @else {
+    box-shadow: inset 0 1px 0 0 $inset-top-color;
+  }
+}
+
+@mixin button-bevel() {
+  @include bevel();
+  text-shadow: 1px 1px 0 $colored-button-text-shadow;
+
+  &.btn-lg {
+    @include bevel($bottom-strength: -2px);
+  }
+}

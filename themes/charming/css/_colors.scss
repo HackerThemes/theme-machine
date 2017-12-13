@@ -1,0 +1,75 @@
+// Accent colors
+// Used to generate: bg-accent-X, text-accent-X, ...
+$accents: (
+  1: (
+    color: $accent-1,
+    border: #239834,
+    gstart: #34bc48,
+    gstop: #2caa3f,
+    contrast: #fff
+  ),
+  2: (
+    color: $accent-2,
+    border: #24262c,
+    gstart: #353844,
+    gstop: #444860,
+    contrast: #d8d9dd
+  ),
+  3: (
+    color: $accent-3,
+    gstart: #3b3b3b,
+    gstop: #2e2e2e,
+    border: #272727,
+    contrast: #fff
+  )
+) !default;
+
+// Fancy UI gradients
+// Used to generate: bg-gradient-X, ...
+$gradients: (
+  1: (
+    gstart: #353844,
+    gstop: #444860
+  ),
+  2: (
+    gstart: #35bd49,
+    gstop: #7ec989
+  ),
+  98: (
+    // Dashboard background up for changes
+    gstart: #c2cad1,
+    gstop: #8e9eab
+  )
+) !default;
+
+$body-color-soft: #828282 !default;
+
+// Dark and light colors (text color for dark/light elements)
+$dark-color: #353844 !default;
+$dark-gstart: #353844 !default;
+$dark-gstop: #444860 !default;
+$dark-contrast: #fff !default;
+$dark-separator: #4e5161 !default;
+$dark-contrast-highlight: #b8f5c3 !default;
+
+
+$light-color: #f9f9f9 !default;
+$light-gstart: #fff !default;
+$light-gstop: #f9f9f9 !default;
+$light-contrast: #343434 !default;
+$light-separator: #c8c8c8 !default;
+$light-contrast-highlight: #31a742 !default;
+
+// Buttons
+$colored-button-text-shadow: rgba(0, 0, 0, .07) !default;
+
+//Forms
+$charming-form-input-bg: rgba(255, 255, 255, .8) !default;
+
+// Navigation
+$navbar-dark-mobile-nav-bg: rgba(255, 255, 255, .2) !default;
+$navbar-dark-mobile-nav-highlight: rgba(255, 255, 255, .4) !default;
+
+$navbar-light-mobile-nav-bg: rgba(0, 0, 0, .06) !default;
+$navbar-light-mobile-nav-highlight: rgba(0, 0, 0, .10) !default;
+
