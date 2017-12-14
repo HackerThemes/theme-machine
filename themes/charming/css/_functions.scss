@@ -1,0 +1,19 @@
+// function to retrieve colors from maps
+@function multi-map-get($map, $list...) {
+  @each $key in $list {
+    $map: map-get($map, $key);
+  }
+  @return $map; // Our value
+}
+
+@function accent($number: 1, $value: 'color') {
+  // a wrapper around map-get for the $accents array
+  @return multi-map-get($accents, $number, $value);
+}
+
+@function gradient($number: 1, $value: 'gstart') {
+  // a wrapper around map-get for the $gradients array
+  @return multi-map-get($gradients, $number, $value);
+}
+
+

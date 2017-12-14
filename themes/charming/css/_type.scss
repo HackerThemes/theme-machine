@@ -1,0 +1,28 @@
+// Type
+
+h6,
+.h6 { font-weight: bold; }
+
+h1,
+.h1 { line-height: 1.384615385; } // 54px
+
+h2,
+.h2 { line-height: 1.35483871; } // 42px
+h3,
+.h3 { line-height: 1.44; } // 36px
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 { line-height: 1.5; }
+
+p {
+  margin-bottom: $spacer * .75;
+}
+
+// Text utilities 0
+.text-soft {
+  color: $body-color-soft;
+}

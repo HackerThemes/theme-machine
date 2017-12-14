@@ -1,105 +1,18 @@
 /*! Bootstrap 4 "Charming" Theme by HackerThemes, https://hackerthemes.com */
-$body-color: #373a3c !default; //BS
 
-// Charming accents (more in _colors.scss)
-$accent-1: #31a742;
-$accent-2: #353844;
-$accent-3: #3b3b3b;
-
-// Adding accents to bootstrap
-$theme-colors: (
-  accent-1: $accent-1,
-  accent-2: $accent-2,
-  accent-3: $accent-3
-);
-
-// Spacers
-$spacer: 1rem !default; //16px //BS
-
-$spacers: (
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  6: ($spacer * 3.75),
-  7: ($spacer * 4.5),
-  8: ($spacer * 6),
-
-) !default; //BS
-
-//Typography
-//$font-family-sans-serif:   'Lato', Arial, sans-serif !default; // BS
-$line-height-base: 1.5 !default; // 24px // BS
-$line-height-lg: 1.44 !default; // 36px (from 25) // BS
-
-$h1-font-size: 2.4375rem !default; // 39px // BS
-$h2-font-size: 1.9375rem !default; // 31px // BS
-$h3-font-size: 1.5625rem !default; // 25px // BS
-$h4-font-size: 1.25rem !default; //20px // BS
-$h5-font-size: 1.25rem !default; //20px // BS
-$h6-font-size: 1rem !default; // 16px // BS
-
-$display1-size: 5.9375rem !default; // 95px // BS
-$display2-size: 4.75rem !default; // 76px // BS
-$display3-size: 3.8125rem !default; // 61px // BS
-$display4-size: 3.0625rem !default; // 48px // BS
-
-// Jumbotron
-$jumbotron-padding:              2rem !default; //BS
-
-// Components
-$border-radius:          5px !default; // 5px // BS
-$border-radius-lg:       $border-radius !default; // BS
-$border-radius-sm:       $border-radius !default; // BS
-
-// Buttons
-$btn-padding-y:                  10px !default; // BS
-$btn-line-height:                1 !default; // BS
-
-$btn-padding-y-sm: .5rem; //BS
-$btn-padding-x-sm: .75rem; //BS
-
-// Colors
-$navbar-dark-color: rgba(255, 255, 255, .9) !default; //BS
-$navbar-dark-hover-color: rgba(255, 255, 255, .95) !default; //BS
-$navbar-dark-toggler-border-color: rgba(255, 255, 255, .1) !default; //BS
-
-// Navigation
-$navbar-light-color:                #343434 !default; //BS
-$navbar-light-active-color:         #4c4c4c !default; //BS
-
-$navbar-dark-color:                 #fff !default; //BS
-$navbar-dark-hover-color:           darken($navbar-dark-color, 13%) !default; //BS
-$navbar-dark-active-color:          #fff !default; //BS
-$navbar-dark-disabled-color:        #fff !default; //BS
-
-$green: #35bd49 !default;
-$cyan: #4ac1ee !default;
-$orange: #fba91e !default;
-$red: #fa2840 !default;
-
-// Forms
-$custom-control-indicator-checked-bg:         #494949 !default; //BS
-$custom-checkbox-indicator-indeterminate-bg: #494949 !default; //BS
-
-// scss-lint:disable ColorVariable
-$custom-control-indicator-focus-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #494949 !default; //BS
-// scss-lint:enable ColorVariable
-
-$input-focus-border-color:   #898989 !default; //BS
-
-// Links
-$link-color: $accent-1 !default; //BS
-
+@import 'functions'; // map-get
+@import 'colors';
+@import 'variables';
 
 // Bootstrap variables end: Import Bootstrap
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 // Charming stuff
-@import 'colors';
 @import 'mixins/mixins';
 @import 'mixins/colors';
 
 @import 'buttons';
+@import 'forms';
+@import 'icons';
+@import 'type';
+@import 'utilities';

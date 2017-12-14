@@ -1,3 +1,11 @@
+// ---------------------------------
+// ---------- CHARMING -------------
+// ---------------------------------
+
+$accent-1: #31a742;
+$accent-2: #353844;
+$accent-3: #3b3b3b;
+
 // Accent colors
 // Used to generate: bg-accent-X, text-accent-X, ...
 $accents: (
@@ -73,3 +81,51 @@ $navbar-dark-mobile-nav-highlight: rgba(255, 255, 255, .4) !default;
 $navbar-light-mobile-nav-bg: rgba(0, 0, 0, .06) !default;
 $navbar-light-mobile-nav-highlight: rgba(0, 0, 0, .10) !default;
 
+// Features
+$img-simple-border: #2d3842 !default;
+
+
+// ---------------------------------
+// ---------- BOOTSTRAP ------------
+// ---------------------------------
+
+$body-color: #373a3c !default; //BS
+
+$green: #35bd49 !default;
+$cyan: #4ac1ee !default;
+$orange: #fba91e !default;
+$red: #fa2840 !default;
+
+// Adding accents to bootstrap
+$theme-colors: (
+  accent-1: $accent-1,
+  accent-2: $accent-2,
+  accent-3: $accent-3
+);
+
+// Navbar
+$navbar-dark-color: rgba(255, 255, 255, .9) !default; //BS
+$navbar-dark-hover-color: rgba(255, 255, 255, .95) !default; //BS
+$navbar-dark-toggler-border-color: rgba(255, 255, 255, .1) !default; //BS
+
+// Navigation
+$navbar-light-color:                #343434 !default; //BS
+$navbar-light-active-color:         #4c4c4c !default; //BS
+
+$navbar-dark-color:                 #fff !default; //BS
+$navbar-dark-hover-color:           darken($navbar-dark-color, 13%) !default; //BS
+$navbar-dark-active-color:          #fff !default; //BS
+$navbar-dark-disabled-color:        #fff !default; //BS
+
+// Forms
+$custom-control-indicator-checked-bg:         #494949 !default; //BS
+$custom-checkbox-indicator-indeterminate-bg: #494949 !default; //BS
+
+// scss-lint:disable ColorVariable
+$custom-control-indicator-focus-box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #494949 !default; //BS
+// scss-lint:enable ColorVariable
+
+$input-focus-border-color:   #898989 !default; //BS
+
+// Links
+$link-color: $accent-1 !default; //BS
