@@ -7,6 +7,11 @@
 // Bootstrap variables end: Import Bootstrap
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
+
+// Customized Bootstrap
+@import 'alerts';
+
+
 // Charming stuff
 @import 'mixins/mixins';
 @import 'mixins/colors';

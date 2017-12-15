@@ -23,13 +23,13 @@
 .btn-success,
 .btn-warning,
 .btn-danger,
+.btn-secondary,
 .btn-info,
 .btn-dark {
   @include button-bevel();
 }
 
 // Give white standard button a special bevel
-.btn-secondary,
 .btn-light {
   @include bevel($dark: false);
 
