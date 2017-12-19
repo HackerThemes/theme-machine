@@ -2,18 +2,18 @@
 // ---------- CHARMING -------------
 // ---------------------------------
 
-$accent-1: #35BD49;
-$accent-2: #353844;
-$accent-3: #3b3b3b;
+$accent-1: #35BD49 !default;
+$accent-2: #353844 !default;
+$accent-3: #3b3b3b !default;
 
-$primary: #2284fe;
-$secondary: #78baf8;
-$success: $accent-1;
-$info: #5a7ec5;
-$warning: #f0a249;
-$danger: #fc2344;
-$light: #e5e5e5;
-$dark: #3b3b3b;
+$primary: #2284fe !default;
+$secondary: #78baf8 !default;
+$success: $accent-1 !default;
+$info: #5a7ec5 !default;
+$warning: #f0a249 !default;
+$danger: #fc2344 !default;
+$light: #e5e5e5 !default;
+$dark: #3b3b3b !default;
 
 // Accent colors
 // Used to generate: bg-accent-X, text-accent-X, ...
@@ -106,11 +106,12 @@ $orange: #fba91e !default;
 $red: #fa2840 !default;
 
 // Adding accents to bootstrap
-$theme-colors: (
+$theme-colors: () !default;
+$theme-colors: map-merge((
   accent-1: $accent-1,
   accent-2: $accent-2,
   accent-3: $accent-3
-);
+), $theme-colors);
 
 // Navbar
 $navbar-dark-color: rgba(255, 255, 255, .9) !default; //BS
