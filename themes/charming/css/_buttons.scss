@@ -38,6 +38,15 @@
   }
 }
 
+.btn-secondary {
+  &:hover,
+  &:active,
+  &:focus,
+  & {
+    color: #fff;
+  }
+}
+
 //[class^='btn-outline-'],
 //[class*=' btn-outline-'] {
 //  border-width: 5px;
