@@ -10,21 +10,19 @@
   "author": "Alexander Rechsteiner (HackerThemes.com)",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap": "^4.0.0-beta.3",
     "gulp": "^3.9.1",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.12.5"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^7.2.3",
     "font-awesome": "^4.7.0",
-    "gulp-clean-css": "^3.4.2",
+    "gulp-clean-css": "^3.9.1",
     "gulp-nunjucks-render": "^2.2.1",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-scss-lint": "^0.4.0",
-    "gulp-sourcemaps": "^2.6.0",
+    "gulp-sourcemaps": "^2.6.2",
     "lazypipe": "^1.0.1"
   }
 }
