@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
-    "gulp": "^3.9.1",
+    "gulp": "^3.9.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.3",
