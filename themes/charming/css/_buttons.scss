@@ -52,25 +52,25 @@
 //  border-width: 5px;
 //}
 
-// Colored buttons
-// Generates classes for all accent colors in $accents, .btn-accent-1, .btn-accent-2, etc.
-@each $number, $colors in $accents {
-  .btn-accent-#{$number} {
-    //($background, $border, $active-background: darken($background, 7.5%), $active-border: darken($border, 10%)) {
-
-    @include button-variant(
-        map-get($colors, color),
-        map-get($colors, border)
-    );
-    @include button-bevel();
-  }
-
-  .btn-outline-accent-#{$number} {
-    @include button-outline-variant(
-        map-get($colors, color)
-    );
-  }
-}
+//// Colored buttons
+//// Generates classes for all accent colors in $accents, .btn-accent-1, .btn-accent-2, etc.
+//@each $number, $colors in $accents {
+//  .btn-accent-#{$number} {
+//    //($background, $border, $active-background: darken($background, 7.5%), $active-border: darken($border, 10%)) {
+//
+//    @include button-variant(
+//        map-get($colors, color),
+//        map-get($colors, border)
+//    );
+//    @include button-bevel();
+//  }
+//
+//  .btn-outline-accent-#{$number} {
+//    @include button-outline-variant(
+//        map-get($colors, color)
+//    );
+//  }
+//}
 
 .btn-icon {
   .icon {

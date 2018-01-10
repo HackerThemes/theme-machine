@@ -6,14 +6,12 @@
   @return $map; // Our value
 }
 
-@function accent($number: 1, $value: 'color') {
-  // a wrapper around map-get for the $accents array
-  @return multi-map-get($accents, $number, $value);
-}
-
 @function gradient($number: 1, $value: 'gstart') {
   // a wrapper around map-get for the $gradients array
   @return multi-map-get($gradients, $number, $value);
 }
 
-
+@function get-color($name: "primary", $value: 'color') {
+  // a wrapper around map-get for the $theme-colors-extended array
+  @return multi-map-get($theme-colors-extended, $name, $value);
+}

@@ -2,7 +2,7 @@
 // ---------- CHARMING -------------
 // ---------------------------------
 
-$accent-1: #35BD49 !default;
+$accent-1: #35bd49 !default;
 $accent-2: #353844 !default;
 $accent-3: #3b3b3b !default;
 
@@ -17,29 +17,46 @@ $dark: #3b3b3b !default;
 
 // Accent colors
 // Used to generate: bg-accent-X, text-accent-X, ...
-$accents: (
-  1: (
+
+$theme-colors-extended: () !default;
+$theme-colors-extended: map-merge((
+  primary: (
+    color: $primary,
+    border: #ff13a8,
+    gstart: #ff5d21,
+    gstop: #62ff10,
+    contrast: #060606
+  ),
+  secondary: (
+    color: $secondary,
+    border: #ff7156,
+    gstart: #55a5ff,
+    gstop: #81ff0c,
+    contrast: #ff0075
+  ),
+  accent-1: (
     color: $accent-1,
     border: #239834,
     gstart: #34bc48,
     gstop: #2caa3f,
     contrast: #fff
   ),
-  2: (
+  accent-2: (
     color: $accent-2,
     border: #24262c,
     gstart: #353844,
     gstop: #444860,
     contrast: #d8d9dd
   ),
-  3: (
+  accent-3: (
     color: $accent-3,
     gstart: #3b3b3b,
     gstop: #2e2e2e,
     border: #272727,
     contrast: #fff
   )
-) !default;
+), $theme-colors-extended);
+
 
 // Fancy UI gradients
 // Used to generate: bg-gradient-X, ...
@@ -108,9 +125,9 @@ $red: #fa2840 !default;
 // Adding accents to bootstrap
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  accent-1: $accent-1,
-  accent-2: $accent-2,
-  accent-3: $accent-3
+  "accent-1": $accent-1,
+  "accent-2": $accent-2,
+  "accent-3": $accent-3
 ), $theme-colors);
 
 // Navbar

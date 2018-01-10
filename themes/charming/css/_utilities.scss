@@ -8,27 +8,6 @@
   }
 }
 
-// Generate .bg-accent-X, .text-accent-X, .btn-accent-X and .btn-outline-accent-X from accent color map
-@each $number, $colors in $accents {
-  .bg-accent-#{$number} {
-    @include bg-color(
-              map-get($colors, color)
-             );
-  }
-
-  .text-accent-#{$number} {
-    @include text-color(
-              map-get($colors, color)
-             );
-  }
-
-  .text-accent-contrast-#{$number} {
-    @include text-color(
-                    map-get($colors, contrast)
-    );
-  }
-}
-
 .img-simple-border {
   border: 1px $img-simple-border solid;
 }
