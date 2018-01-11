@@ -4,7 +4,6 @@
 
 $accent-1: #35bd49 !default;
 $accent-2: #353844 !default;
-$accent-3: #3b3b3b !default;
 
 $primary: #2284fe !default;
 $secondary: #78baf8 !default;
@@ -14,67 +13,6 @@ $warning: #f0a249 !default;
 $danger: #fc2344 !default;
 $light: #e5e5e5 !default;
 $dark: #3b3b3b !default;
-
-// Accent colors
-// Used to generate: bg-accent-X, text-accent-X, ...
-
-$theme-colors-extended: () !default;
-$theme-colors-extended: map-merge((
-  primary: (
-    color: $primary,
-    border: #ff13a8,
-    gstart: #ff5d21,
-    gstop: #62ff10,
-    contrast: #060606
-  ),
-  secondary: (
-    color: $secondary,
-    border: #ff7156,
-    gstart: #55a5ff,
-    gstop: #81ff0c,
-    contrast: #ff0075
-  ),
-  accent-1: (
-    color: $accent-1,
-    border: #239834,
-    gstart: #34bc48,
-    gstop: #2caa3f,
-    contrast: #fff
-  ),
-  accent-2: (
-    color: $accent-2,
-    border: #24262c,
-    gstart: #353844,
-    gstop: #444860,
-    contrast: #d8d9dd
-  ),
-  accent-3: (
-    color: $accent-3,
-    gstart: #3b3b3b,
-    gstop: #2e2e2e,
-    border: #272727,
-    contrast: #fff
-  )
-), $theme-colors-extended);
-
-
-// Fancy UI gradients
-// Used to generate: bg-gradient-X, ...
-$gradients: (
-  1: (
-    gstart: #353844,
-    gstop: #444860
-  ),
-  2: (
-    gstart: #35bd49,
-    gstop: #7ec989
-  ),
-  98: (
-    // Dashboard background up for changes
-    gstart: #c2cad1,
-    gstop: #8e9eab
-  )
-) !default;
 
 $body-color-soft: #828282 !default;
 
@@ -126,8 +64,7 @@ $red: #fa2840 !default;
 $theme-colors: () !default;
 $theme-colors: map-merge((
   "accent-1": $accent-1,
-  "accent-2": $accent-2,
-  "accent-3": $accent-3
+  "accent-2": $accent-2
 ), $theme-colors);
 
 // Navbar

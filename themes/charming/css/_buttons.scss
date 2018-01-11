@@ -18,26 +18,6 @@
   border-radius: 100px;
 }
 
-// Give Bootstrap buttons a bevel
-.btn-primary,
-.btn-success,
-.btn-warning,
-.btn-danger,
-.btn-secondary,
-.btn-info,
-.btn-dark {
-  @include button-bevel();
-}
-
-// Give white standard button a special bevel
-.btn-light {
-  @include bevel($dark: false);
-
-  &.btn-lg {
-    @include bevel($dark: false, $bottom-strength: -2px);
-  }
-}
-
 .btn-secondary {
   &:hover,
   &:active,
@@ -47,30 +27,22 @@
   }
 }
 
-//[class^='btn-outline-'],
-//[class*=' btn-outline-'] {
-//  border-width: 5px;
-//}
-
 //// Colored buttons
-//// Generates classes for all accent colors in $accents, .btn-accent-1, .btn-accent-2, etc.
-//@each $number, $colors in $accents {
-//  .btn-accent-#{$number} {
-//    //($background, $border, $active-background: darken($background, 7.5%), $active-border: darken($border, 10%)) {
-//
-//    @include button-variant(
-//        map-get($colors, color),
-//        map-get($colors, border)
-//    );
-//    @include button-bevel();
-//  }
-//
-//  .btn-outline-accent-#{$number} {
-//    @include button-outline-variant(
-//        map-get($colors, color)
-//    );
-//  }
-//}
+//// Adds bevel to the buttons
+@each $name, $colors in $theme-colors {
+  .btn-#{$name} {
+    @include button-bevel();
+  }
+}
+
+ //Give white standard button a special bevel
+.btn-light {
+  @include bevel($dark: false);
+
+  &.btn-lg {
+    @include bevel($dark: false, $bottom-strength: -2px);
+  }
+}
 
 .btn-icon {
   .icon {
