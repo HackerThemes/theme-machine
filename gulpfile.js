@@ -64,6 +64,14 @@ gulp.task('build-charming', function() {
     .pipe(gulp.dest('dist/charming/css/'))
 });
 
+gulp.task('build-bubblegum', function() {
+  return gulp.src(['themes/bubblegum/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/bubblegum/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/bubblegum/css/'))
+});
+
 gulp.task('build-neon-glow', function() {
   gulp.src(['themes/neon-glow/images/*'])
     .pipe(gulp.dest('dist/neon-glow/images/'))
@@ -90,23 +98,28 @@ gulp.task('nunjucks', function() {
     .pipe(nunjucks({data:{title:"Charming"}}))
     .pipe(gulp.dest('dist/charming/'));
 
+  gulp.src('themes/bubblegum/*.html')
+    .pipe(nunjucks({data:{title:"Bubblegum"}}))
+    .pipe(gulp.dest('dist/bubblegum/'));
+
   gulp.src('themes/neon-glow/*.html')
     .pipe(nunjucks({data:{title:"Neon Glow"}}))
     .pipe(gulp.dest('dist/neon-glow/'));
 
   gulp.src('themes/default/*.html')
       .pipe(nunjucks())
-      .pipe(gulp.dest('dist/default/'))
+      .pipe(gulp.dest('dist/default/'));
   }
 );
 
 gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/vibrant-sea/css/*.scss'], ['build-vibrant-sea']);
+  gulp.watch(['themes/bubblegum/css/*.scss'], ['build-bubblegum']);
   gulp.watch(['themes/business-tycoon/css/*.scss'], ['build-business-tycoon']);
   gulp.watch(['themes/charming/css/*.scss'], ['build-charming']);
   gulp.watch(['themes/neon-glow/css/*.scss'], ['build-neon-glow']);
   gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
-gulp.task('default', ['build-neon-glow', 'build-charming', 'build-business-tycoon', 'build-vibrant-sea', 'nunjucks'], function() {
+gulp.task('default', ['build-neon-glow', 'build-charming', 'build-bubblegum', 'build-business-tycoon', 'build-vibrant-sea', 'nunjucks'], function() {
 });

@@ -1,0 +1,15 @@
+/*! Bootstrap 4 "Bubblegum" Theme by HackerThemes, https://hackerthemes.com */
+
+$theme-colors: (
+  primary: #443ad8,
+  secondary: #3a39e3,
+  success: #29c272,
+  info: #6c9ce6,
+  warning: #e1954c,
+  danger: #d33,
+  dark: #0b1a31,
+  light: #d8e7f1
+);
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
