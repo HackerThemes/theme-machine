@@ -64,12 +64,92 @@ gulp.task('build-charming', function() {
     .pipe(gulp.dest('dist/charming/css/'))
 });
 
+gulp.task('build-daydream', function() {
+  return gulp.src(['themes/daydream/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/daydream/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/daydream/css/'))
+});
+
+gulp.task('build-executive-suite', function() {
+  return gulp.src(['themes/executive-suite/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/executive-suite/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/executive-suite/css/'))
+});
+
+gulp.task('build-good-news', function() {
+  return gulp.src(['themes/good-news/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/good-news/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/good-news/css/'))
+});
+
+gulp.task('build-growth', function() {
+  return gulp.src(['themes/growth/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/growth/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/growth/css/'))
+});
+
+gulp.task('build-harbor', function() {
+  return gulp.src(['themes/harbor/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/harbor/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/harbor/css/'))
+});
+
+gulp.task('build-hello-world', function() {
+  return gulp.src(['themes/hello-world/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/hello-world/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/hello-world/css/'))
+});
+
+gulp.task('build-pleasant', function() {
+  return gulp.src(['themes/pleasant/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/pleasant/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/pleasant/css/'))
+});
+
+gulp.task('build-retro', function() {
+  return gulp.src(['themes/retro/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/retro/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/retro/css/'))
+});
+
+gulp.task('build-wizardry', function() {
+  return gulp.src(['themes/wizardry/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/wizardry/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/wizardry/css/'))
+});
+
 gulp.task('build-bubblegum', function() {
   return gulp.src(['themes/bubblegum/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/bubblegum/css/'))
     .pipe(minifyCss())
     .pipe(gulp.dest('dist/bubblegum/css/'))
+});
+
+gulp.task('build-daydream', function() {
+  return gulp.src(['themes/daydream/css/*.scss'])
+    .pipe(buildBootstrap())
+    .pipe(gulp.dest('dist/daydream/css/'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('dist/daydream/css/'))
 });
 
 gulp.task('build-neon-glow', function() {
@@ -98,9 +178,45 @@ gulp.task('nunjucks', function() {
     .pipe(nunjucks({data:{title:"Charming"}}))
     .pipe(gulp.dest('dist/charming/'));
 
+  gulp.src('themes/executive-suite/*.html')
+    .pipe(nunjucks({data:{title:"Executive Suite"}}))
+    .pipe(gulp.dest('dist/executive-suite /'));
+
   gulp.src('themes/bubblegum/*.html')
     .pipe(nunjucks({data:{title:"Bubblegum"}}))
     .pipe(gulp.dest('dist/bubblegum/'));
+
+  gulp.src('themes/good-news/*.html')
+    .pipe(nunjucks({data:{title:"Good News"}}))
+    .pipe(gulp.dest('dist/good-news/'));
+
+  gulp.src('themes/daydream/*.html')
+    .pipe(nunjucks({data:{title:"Daydream"}}))
+    .pipe(gulp.dest('dist/daydream/'));
+
+  gulp.src('themes/growth/*.html')
+    .pipe(nunjucks({data:{title:"Growth"}}))
+    .pipe(gulp.dest('dist/growth/'));
+
+  gulp.src('themes/harbor/*.html')
+    .pipe(nunjucks({data:{title:"Harbor"}}))
+    .pipe(gulp.dest('dist/harbor/'));
+
+  gulp.src('themes/pleasant/*.html')
+    .pipe(nunjucks({data:{title:"Pleasant"}}))
+    .pipe(gulp.dest('dist/pleasant/'));
+
+  gulp.src('themes/retro/*.html')
+    .pipe(nunjucks({data:{title:"Retro"}}))
+    .pipe(gulp.dest('dist/retro/'));
+
+  gulp.src('themes/wizardry/*.html')
+    .pipe(nunjucks({data:{title:"Wizardry"}}))
+    .pipe(gulp.dest('dist/wizardry/'));
+
+  gulp.src('themes/hello-world/*.html')
+    .pipe(nunjucks({data:{title:"Hello World"}}))
+    .pipe(gulp.dest('dist/hello-world/'));
 
   gulp.src('themes/neon-glow/*.html')
     .pipe(nunjucks({data:{title:"Neon Glow"}}))
@@ -115,11 +231,22 @@ gulp.task('nunjucks', function() {
 gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/vibrant-sea/css/*.scss'], ['build-vibrant-sea']);
   gulp.watch(['themes/bubblegum/css/*.scss'], ['build-bubblegum']);
+  gulp.watch(['themes/daydream/css/*.scss'], ['build-daydream']);
+
+  gulp.watch(['themes/executive-suite/css/*.scss'], ['build-executive-suite']);
+  gulp.watch(['themes/good-news/css/*.scss'], ['build-good-news']);
+  gulp.watch(['themes/growth/css/*.scss'], ['build-growth']);
+  gulp.watch(['themes/harbor/css/*.scss'], ['build-harbor']);
+  gulp.watch(['themes/hello-world/css/*.scss'], ['build-hello-world']);
+  gulp.watch(['themes/pleasant/css/*.scss'], ['build-pleasant']);
+  gulp.watch(['themes/retro/css/*.scss'], ['build-retro']);
+  gulp.watch(['themes/wizardry/css/*.scss'], ['build-wizardry']);
+
   gulp.watch(['themes/business-tycoon/css/*.scss'], ['build-business-tycoon']);
   gulp.watch(['themes/charming/css/*.scss'], ['build-charming']);
   gulp.watch(['themes/neon-glow/css/*.scss'], ['build-neon-glow']);
   gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
-gulp.task('default', ['build-neon-glow', 'build-charming', 'build-bubblegum', 'build-business-tycoon', 'build-vibrant-sea', 'nunjucks'], function() {
+gulp.task('default', ['build-neon-glow', 'build-executive-suite', 'build-good-news', 'build-growth', 'build-harbor', 'build-hello-world', 'build-pleasant', 'build-retro', 'build-wizardry', 'build-charming', 'build-daydream', 'build-bubblegum', 'build-business-tycoon', 'build-vibrant-sea', 'nunjucks'], function() {
 });
