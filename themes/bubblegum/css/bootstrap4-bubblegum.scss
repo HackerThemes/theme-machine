@@ -1,15 +1,30 @@
 /*! Bootstrap 4 "Bubblegum" Theme by HackerThemes, https://hackerthemes.com */
 
 $theme-colors: (
-  primary: #443ad8,
-  secondary: #3a39e3,
-  success: #29c272,
-  info: #6c9ce6,
-  warning: #e1954c,
-  danger: #d33,
-  dark: #0b1a31,
-  light: #d8e7f1
+  primary: #3E5AF1,
+  secondary: #3EAFF1,
+  success: #3EF169,
+  info: #3EF1E8,
+  warning: #F1D53E,
+  danger: #F13E5A,
+  dark: #363636,
+  light: #FFFFFF
 );
+$font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; //BS
+$border-radius: 10px;
+$border-radius-lg: 10px;
+$border-radius-sm: 10px;
+
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+
+
+
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: 'Chicle', cursive;
+}
 
