@@ -1,14 +1,15 @@
 /*! Bootstrap 4 "Wizardry" Theme by HackerThemes, https://hackerthemes.com */
 
-//$theme-colors: (
-//  primary: #3E5AF1,
-//  secondary: #3EAFF1,
-//  success: #3EF169,
-//  info: #3EF1E8,
-//  warning: #F1D53E,
-//  danger: #F13E5A,
-//  dark: #363636,
-//  light: #FFFFFF
-//);
+$theme-colors: (
+  primary: #0085FF,
+  secondary: #99ABC9,
+  success: #3AC84C,
+  info: #8568D2,
+  warning: #FF8E00,
+  danger: #F43535,
+  dark: #22232D,
+  light: #D6DCE6
+);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';

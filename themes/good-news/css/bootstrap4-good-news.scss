@@ -1,14 +1,15 @@
 /*! Bootstrap 4 "Good News" Theme by HackerThemes, https://hackerthemes.com */
 
-//$theme-colors: (
-//  primary: #3E5AF1,
-//  secondary: #3EAFF1,
-//  success: #3EF169,
-//  info: #3EF1E8,
-//  warning: #F1D53E,
-//  danger: #F13E5A,
-//  dark: #363636,
-//  light: #FFFFFF
-//);
+$theme-colors: (
+  primary: #A4C5FC,
+  secondary: #85D2E0,
+  success: #ACFCA4,
+  info: #C3A4FC,
+  warning: #FCE4A4,
+  danger: #FCA5A4,
+  dark: #454545,
+  light: #D9D9D9
+);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';

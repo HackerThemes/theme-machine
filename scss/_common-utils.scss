@@ -1,0 +1,13 @@
+@each $color, $value in $theme-colors {
+  .btn-hover-text-#{$color} {
+    &:hover {
+      color: $value;
+    }
+  }
+}
+
+.btn-wide {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+

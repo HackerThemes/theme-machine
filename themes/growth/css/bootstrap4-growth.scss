@@ -1,14 +1,15 @@
-/*! Bootstrap 4 "Blank" Theme by HackerThemes, https://hackerthemes.com */
+/*! Bootstrap 4 "Growth" Theme by HackerThemes, https://hackerthemes.com */
 
-//$theme-colors: (
-//  primary: #3E5AF1,
-//  secondary: #3EAFF1,
-//  success: #3EF169,
-//  info: #3EF1E8,
-//  warning: #F1D53E,
-//  danger: #F13E5A,
-//  dark: #363636,
-//  light: #FFFFFF
-//);
+$theme-colors: (
+  primary: #5371FB,
+  secondary: #FB8F53,
+  success: #53FB70,
+  info: #53B1FB,
+  warning: #ECFB53,
+  danger: #FB536D,
+  dark: #373193,
+  light: #FFFFFF
+);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';

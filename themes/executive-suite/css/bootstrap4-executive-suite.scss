@@ -1,14 +1,19 @@
 /*! Bootstrap 4 "Executive Suite" Theme by HackerThemes, https://hackerthemes.com */
 
-//$theme-colors: (
-//  primary: #3E5AF1,
-//  secondary: #3EAFF1,
-//  success: #3EF169,
-//  info: #3EF1E8,
-//  warning: #F1D53E,
-//  danger: #F13E5A,
-//  dark: #363636,
-//  light: #FFFFFF
-//);
+$theme-colors: (
+  primary: #536391,
+  secondary: #918653,
+  success: #539153,
+  info: #6C5391,
+  warning: #D39951,
+  danger: #C05E4A,
+  dark: #343758,
+  light: #F7F3E7
+);
+
+$border-radius: 0 !default;
+$border-radius-sm: 0 !default;
+$border-radius-lg: 0 !default;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';

@@ -187,6 +187,7 @@ $table-dark-color:           $body-color;
 //</editor-fold>
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';
 
 // Vibrant Sea
 $font-family-display: 'Hack', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';

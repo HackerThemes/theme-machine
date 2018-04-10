@@ -10,21 +10,28 @@ $theme-colors: (
   dark: #363636,
   light: #FFFFFF
 );
+
 $font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; //BS
 $border-radius: 10px;
 $border-radius-lg: 10px;
 $border-radius-sm: 10px;
 
-
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';
 
 
-
-
-.display-1,
-.display-2,
-.display-3,
-.display-4 {
+.text-chicle {
   font-family: 'Chicle', cursive;
 }
 
+.text-sans {
+  font-family: $font-family-sans-serif;
+}
+
+.lead {
+  font-size: 30px;
+}
+
+.display-1 {
+  font-size: 150px;
+}

@@ -1,14 +1,15 @@
 /*! Bootstrap 4 "Harbor" Theme by HackerThemes, https://hackerthemes.com */
 
-//$theme-colors: (
-//  primary: #3E5AF1,
-//  secondary: #3EAFF1,
-//  success: #3EF169,
-//  info: #3EF1E8,
-//  warning: #F1D53E,
-//  danger: #F13E5A,
-//  dark: #363636,
-//  light: #FFFFFF
-//);
+$theme-colors: (
+  primary: #8732C4,
+  secondary: #3EA1E6,
+  success: #32C466,
+  info: #325BC4,
+  warning: #C49E32,
+  danger: #C43532,
+  dark: #191919,
+  light: #FFFFFF
+);
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';

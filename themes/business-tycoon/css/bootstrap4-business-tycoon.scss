@@ -2,21 +2,20 @@
 
 // Bootstrap variables start
 $border-radius: 0 !default;
+$border-radius-sm: 0 !default;
 $border-radius-lg: 0 !default;
 
 $body-color: #171717 !default;
 $font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default; //BS
 
-$theme-colors: (
-  primary: #266cd8,
-  secondary: #48d3e3,
-  success: #29c272,
-  info: #6c9ce6,
-  warning: #e1954c,
-  danger: #d33,
-  dark: #0b1a31,
-  light: #bfcfd9
-);
+$primary: #266cd8;
+$secondary: #48d3e3;
+$success: #29c272;
+$info: #6c9ce6;
+$warning: #e1954c;
+$danger: #d33;
+$dark: #0b1a31;
+$light: #bfcfd9;
 
 $code-color: #1265ba;
 $code-bg: #bdd3f3;
@@ -29,6 +28,7 @@ $display4-weight: 400;
 // Bootstrap variables end: Import Bootstrap
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../scss/common-utils';
 
 // Custom overrides
 
@@ -39,5 +39,6 @@ $display4-weight: 400;
 .btn-outline-light {
   &:hover {
     background-color: rgba(255, 255, 255, .2);
+    color: $light;
   }
 }
