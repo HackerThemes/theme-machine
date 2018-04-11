@@ -1,15 +1,43 @@
 /*! Bootstrap 4 "Daydream" Theme by HackerThemes, https://hackerthemes.com */
 
-$theme-colors: (
-  primary: #5576C4,
-  secondary: #9A55C4,
-  success: #90C455,
-  info: #55AEC4,
-  warning: #C47355,
-  danger: #C45567,
-  dark: #1F2739,
-  light: #FFFFFF
-);
+$primary: #5576C4;
+$secondary: #9A55C4;
+$success: #90C455;
+$info: #55AEC4;
+$warning: #C47355;
+$danger: #C45567;
+$dark: #1F2739;
+$light: #FFFFFF;
+
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$border-radius: 10px !default;
+$border-radius-sm: 10px !default;
+$border-radius-lg: 10px !default;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../scss/common-utils';
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: "Oswald", sans-serif;
+}
+
+.display-1 {
+  font-size: 142px;
+}
+
+.display-3 {
+  font-size: 66px;
+}
+
+.title-margin-fix {
+  margin-top: -33px;
+}
+
+.text-handwriting {
+   font-family: 'Shadows Into Light', cursive;
+}
+

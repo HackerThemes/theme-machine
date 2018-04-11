@@ -11,5 +11,24 @@ $theme-colors: (
   light: #F0F1FA
 );
 
+$border-radius: 10px !default;
+$border-radius-sm: 10px !default;
+$border-radius-lg: 10px !default;
+
+$font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default; //BS
+
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../scss/common-utils';
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: "Ubuntu", sans-serif;
+  color: #3e3e3e;
+}
+
+.lead,
+.lead-lg {
+  color: #7C7C7C;
+}

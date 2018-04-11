@@ -11,5 +11,18 @@ $theme-colors: (
   light: #FFFFFF
 );
 
+$font-family-sans-serif: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default; //BS
+
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../scss/common-utils';
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: "Oswald", sans-serif;
+}
+
+.bg-harbor {
+  background: url('../images/bg-harbor.jpg');
+}

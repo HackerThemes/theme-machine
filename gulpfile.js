@@ -39,13 +39,13 @@ var minifyCss = lazypipe()
 
 gulp.task('build-vibrant-sea', function() {
   gulp.src(['themes/vibrant-sea/images/*'])
-    .pipe(gulp.dest('dist/vibrant-sea/images/'))
+    .pipe(gulp.dest('dist/vibrant-sea/images/'));
 
   return gulp.src(['themes/vibrant-sea/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/vibrant-sea/css/'))
     .pipe(minifyCss())
-    .pipe(gulp.dest('dist/vibrant-sea/css/'))
+    .pipe(gulp.dest('dist/vibrant-sea/css/'));
 });
 
 gulp.task('build-business-tycoon', function() {
@@ -73,6 +73,9 @@ gulp.task('build-daydream', function() {
 });
 
 gulp.task('build-executive-suite', function() {
+  gulp.src(['themes/executive-suite/images/*'])
+    .pipe(gulp.dest('dist/executive-suite/images/'));
+
   return gulp.src(['themes/executive-suite/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/executive-suite/css/'))
@@ -89,6 +92,9 @@ gulp.task('build-good-news', function() {
 });
 
 gulp.task('build-growth', function() {
+  gulp.src(['themes/growth/images/*'])
+    .pipe(gulp.dest('dist/growth/images/'));
+
   return gulp.src(['themes/growth/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/growth/css/'))
@@ -97,6 +103,9 @@ gulp.task('build-growth', function() {
 });
 
 gulp.task('build-harbor', function() {
+  gulp.src(['themes/harbor/images/*'])
+    .pipe(gulp.dest('dist/harbor/images/'));
+
   return gulp.src(['themes/harbor/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/harbor/css/'))
@@ -129,6 +138,9 @@ gulp.task('build-retro', function() {
 });
 
 gulp.task('build-wizardry', function() {
+  gulp.src(['themes/wizardry/images/*'])
+    .pipe(gulp.dest('dist/wizardry/images/'));
+
   return gulp.src(['themes/wizardry/css/*.scss'])
     .pipe(buildBootstrap())
     .pipe(gulp.dest('dist/wizardry/css/'))

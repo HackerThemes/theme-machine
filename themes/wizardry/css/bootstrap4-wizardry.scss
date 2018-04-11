@@ -11,5 +11,29 @@ $theme-colors: (
   light: #D6DCE6
 );
 
+$font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default; //BS
+
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../scss/common-utils';
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: "Comfortaa", cursive;
+}
+
+.display-icon {
+  font-size: 32px;
+  display: inline-block;
+  padding-top: 10px;
+  vertical-align: top;
+}
+
+.btn-warning {
+  color: #D5DcE6;
+}
+
+.bg-wizardry {
+  background: url('../images/bg-wizardry.jpg');
+}

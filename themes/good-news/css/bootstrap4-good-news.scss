@@ -11,5 +11,22 @@ $theme-colors: (
   light: #D9D9D9
 );
 
+$border-radius: 10px !default;
+$border-radius-sm: 10px !default;
+$border-radius-lg: 10px !default;
+
+$font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default; //BS
+
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../scss/common-utils';
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: "PT Serif", serif;
+}
+
+.lead {
+  font-size: 23px;
+}
