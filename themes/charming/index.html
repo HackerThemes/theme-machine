@@ -1,5 +1,36 @@
 {% extends "nunjucks/base.html" %}
 
+{% block content %}
+<div class="jumbotron bg-accent-2 text-white mb-0">
+  <div class="container">
+
+      <h1 class="display-4 text-white">Charming</h1>
+      <div class="lead mb-3">This is a starter template with a jumbotron.</div>
+      <div class="mt-4">
+        <a href="#!"
+           class="btn btn-outline-light btn-hover-text-accent-2 btn-lg my-3 mx-1 text-left">
+          <span>A Button</span>
+        </a>
+
+        <a href="#!"
+           class="btn btn-accent-1 btn-lg my-3 mx-1 text-left">
+          <span>Another Button</span>
+        </a>
+      </div>
+
+    </div>
+</div>
+{% endblock %}
+
+{% block pro %}
+<p>There is a pro version available which adds new components, a number of page layouts and
+  more color palettes:
+  <a href="https://hackerthemes.com/bootstrap-templates/charming-pro"
+     target="_blank">Check out Charming Pro</a>
+</p>
+{% endblock %}
+
 {% block stylesheet %}
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap4-charming.min.css">
 {% endblock %}

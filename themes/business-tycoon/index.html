@@ -1,5 +1,25 @@
 {% extends "nunjucks/base.html" %}
 
+{% block content %}
+<div class="jumbotron bg-dark text-white mb-0">
+  <div class="container">
+    <h1 class="display-3 text-light">Business Tycoon</h1>
+    <div class="lead mb-3">This is a starter template with a jumbotron.</div>
+    <div class="mt-4">
+      <a href="#!"
+         class="btn btn-primary btn-lg my-3">
+        <span>A button</span>
+      </a>
+
+      <a href="#!"
+         class="btn btn-outline-light btn-hover-text-light btn-lg my-3 ml-2">
+        <span>Another button</span>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
 {% block stylesheet %}
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap4-business-tycoon.min.css">

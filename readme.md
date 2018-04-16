@@ -32,4 +32,4 @@ To build and modify the themes, you'll need to use npm and gulp. On Ubuntu (and 
 
 ## Copyright and license
 
-Code and documentation copyright 2017 [HackerThemes](https://hacekrthemes.com) Code released under the [MIT License](https://opensource.org/licenses/MIT).
+Code and documentation copyright 2017-2018 [HackerThemes](https://hacekrthemes.com) Code released under the [MIT License](https://opensource.org/licenses/MIT).

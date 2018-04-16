@@ -192,7 +192,7 @@ gulp.task('nunjucks', function() {
 
   gulp.src('themes/executive-suite/*.html')
     .pipe(nunjucks({data:{title:"Executive Suite"}}))
-    .pipe(gulp.dest('dist/executive-suite /'));
+    .pipe(gulp.dest('dist/executive-suite/'));
 
   gulp.src('themes/bubblegum/*.html')
     .pipe(nunjucks({data:{title:"Bubblegum"}}))
