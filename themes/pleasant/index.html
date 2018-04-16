@@ -1,0 +1,32 @@
+{% extends "nunjucks/base.html" %}
+
+{% block stylesheet %}
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap4-pleasant.min.css">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-light mb-0 radius-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8">
+        <h1 class="display-1 display-fix">Pleasant</h1>
+        <span class="lead">This is a starter template with a jumbotron</span>
+
+        <div class="mt-4">
+          <a href="#!"
+             class="btn btn-wide btn-primary btn-lg my-3">
+            <span>A Button</span>
+          </a>
+
+          <a href="#!"
+             class="btn btn-wide btn-outline-dark btn-lg my-3 ml-2">
+            <span>Another button</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

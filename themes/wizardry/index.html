@@ -1,0 +1,33 @@
+{% extends "nunjucks/base.html" %}
+
+{% block stylesheet %}
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap4-wizardry.min.css">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-wizardry bg-dark text-white mb-0 radius-0">
+  <div class="container">
+
+      <h1 class="display-1 text-light">Wizardry
+        <span class="fa fa-magic text-warning display-icon"></span>
+      </h1>
+      <span class="lead">This is a starter template with a jumbotron</span>
+
+      <div class="mt-4">
+        <a href="#!"
+           class="btn btn-pill btn-wide btn-warning btn-lg my-3 btn-ht-dl-message">
+          <span>Another button</span>
+        </a>
+
+        <a href="#!"
+           class="btn btn-pill btn-wide btn-outline-light btn-hover-text-dark btn-lg my-3 ml-2">
+          <span>Another button</span>
+        </a>
+      </div>
+
+  </div>
+</div>
+
+{% endblock %}
+

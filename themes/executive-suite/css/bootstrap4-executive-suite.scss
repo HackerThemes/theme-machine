@@ -1,15 +1,13 @@
 /*! Bootstrap 4 "Executive Suite" Theme by HackerThemes, https://hackerthemes.com */
 
-$theme-colors: (
-  primary: #536391,
-  secondary: #918653,
-  success: #539153,
-  info: #6C5391,
-  warning: #D39951,
-  danger: #C05E4A,
-  dark: #343758,
-  light: #F7F3E7
-);
+$primary: #536391;
+$secondary: #918653;
+$success: #539153;
+$info: #6c5391;
+$warning: #d39951;
+$danger: #c05e4a;
+$dark: #343758;
+$light: #f7f3e7;
 
 $border-radius: 0 !default;
 $border-radius-sm: 0 !default;
@@ -29,9 +27,9 @@ $font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, '
 }
 
 .jumbo-vertical-center {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .lead {

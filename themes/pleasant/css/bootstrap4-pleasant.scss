@@ -1,15 +1,13 @@
 /*! Bootstrap 4 "Pleasant" Theme by HackerThemes, https://hackerthemes.com */
 
-$theme-colors: (
-  primary: #6950DF,
-  secondary: #5065DF,
-  success: #58D666,
-  info: #50BADF,
-  warning: #DF8750,
-  danger: #DF5061,
-  dark: #3E3E3E,
-  light: #F0F1FA
-);
+$primary: #6950df;
+$secondary: #5065df;
+$success: #58d666;
+$info: #50badf;
+$warning: #df8750;
+$danger: #df5061;
+$dark: #3e3e3e;
+$light: #f0f1fa;
 
 $border-radius: 10px !default;
 $border-radius-sm: 10px !default;
@@ -24,11 +22,11 @@ $font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe 
 .display-2,
 .display-3,
 .display-4 {
-  font-family: "Ubuntu", sans-serif;
   color: #3e3e3e;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .lead,
 .lead-lg {
-  color: #7C7C7C;
+  color: #7c7c7c;
 }

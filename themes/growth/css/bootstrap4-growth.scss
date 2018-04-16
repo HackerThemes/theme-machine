@@ -1,15 +1,13 @@
 /*! Bootstrap 4 "Growth" Theme by HackerThemes, https://hackerthemes.com */
 
-$theme-colors: (
-  primary: #5371FB,
-  secondary: #FB8F53,
-  success: #53FB70,
-  info: #53B1FB,
-  warning: #ECFB53,
-  danger: #FB536D,
-  dark: #373193,
-  light: #FFFFFF
-);
+$primary: #5371fb;
+$secondary: #fb8f53;
+$success: #53fb70;
+$info: #53b1fb;
+$warning: #ecfb53;
+$danger: #fb536d;
+$dark: #373193;
+$light: #fff;
 
 $font-family-sans-serif: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default; //BS
 
@@ -20,16 +18,16 @@ $font-family-sans-serif: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI
   height: 100vh;
 }
 
-#ht-tm-jumbotron .jumbotron-fullheight {
+.ht-tm-jumbotron {
   margin-top: -48px;
   padding-top: 112px;
 }
 
 .bg-growth {
   background: url('../images/bg-growth.svg');
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: bottom;
 }
 
 .btn-secondary {

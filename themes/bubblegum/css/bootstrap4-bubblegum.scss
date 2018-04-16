@@ -1,15 +1,13 @@
 /*! Bootstrap 4 "Bubblegum" Theme by HackerThemes, https://hackerthemes.com */
 
-$theme-colors: (
-  primary: #3E5AF1,
-  secondary: #3EAFF1,
-  success: #3EF169,
-  info: #3EF1E8,
-  warning: #F1D53E,
-  danger: #F13E5A,
-  dark: #363636,
-  light: #FFFFFF
-);
+$primary: #3e5af1;
+$secondary: #3eaff1;
+$success: #3ef169;
+$info: #3ef1e8;
+$warning: #f1d53e;
+$danger: #f13e5a;
+$dark: #363636;
+$light: #fff;
 
 $font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; //BS
 $border-radius: 10px;

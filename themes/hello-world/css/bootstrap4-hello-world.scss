@@ -1,15 +1,13 @@
 /*! Bootstrap 4 "Hello World" Theme by HackerThemes, https://hackerthemes.com */
 
-$theme-colors: (
-  primary: #5692F6,
-  secondary: #56F6B7,
-  success: #72FA72,
-  info: #66BFED,
-  warning: #F4A554,
-  danger: #F65683,
-  dark: #39348D,
-  light: #C6C4E7
-);
+$primary: #5692f6;
+$secondary: #56f6b7;
+$success: #72fa72;
+$info: #66bfed;
+$warning: #f4a554;
+$danger: #f65683;
+$dark: #39348d;
+$light: #c6c4e7;
 
 $border-radius: 10px !default;
 $border-radius-sm: 10px !default;
@@ -25,16 +23,13 @@ $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI'
 }
 
 .jumbo-vertical-center {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
-#ht-tm-jumbotron .jumbotron-fullheight {
+.ht-tm-jumbotron {
   margin-top: -48px;
-}
-
-#ht-tm-jumbotron .jumbo-vertical-center {
   padding: 0;
 }
 

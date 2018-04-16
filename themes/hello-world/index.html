@@ -1,0 +1,29 @@
+{% extends "nunjucks/base.html" %}
+
+{% block stylesheet %}
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap4-hello-world.min.css">
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fullheight jumbo-vertical-center text-light text-center bg-dark mb-0 radius-0">
+  <div class="container">
+
+      <h1 class="display-2 text-light text-uppercase">Hello World</h1>
+      <span class="lead lead-lg">This is a starter template with a jumbotron</span>
+
+      <div class="mt-4">
+        <a href="#!"
+           class="btn btn-danger btn-lg my-3 btn-wide">
+          <span>A Button</span>
+        </a>
+
+        <a href="#!"
+           class="btn btn-outline-light btn-hover-text-dark btn-wide btn-lg my-3 ml-2">
+          <span>Another button</span>
+        </a>
+      </div>
+  </div>
+</div>
+{% endblock %}
+

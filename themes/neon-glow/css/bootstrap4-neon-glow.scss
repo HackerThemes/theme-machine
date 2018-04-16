@@ -11,16 +11,14 @@ $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI'
 $dark: #32334a;
 $black: #000;
 
-$theme-colors: (
-  primary: #714cdf,
-  secondary: #16a4de,
-  success: #17b06b,
-  info: #2983fe,
-  warning: #f97515,
-  danger: #ff3c5c,
-  light: #dbebfb,
-  dark: $dark
-);
+$primary: #714cdf;
+$secondary: #16a4de;
+$success: #17b06b;
+$info: #2983fe;
+$warning: #f97515;
+$danger: #ff3c5c;
+$light: #dbebfb;
+$dark: $dark;
 
 $display1-size: 4.5rem !default;
 $display2-size: 3.5rem !default;
