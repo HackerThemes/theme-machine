@@ -41,3 +41,6 @@ $border-radius-lg: 10px !default;
   font-family: 'Shadows Into Light', cursive;
 }
 
+::selection {
+  background: rgba(180, 63, 82, 0.56); /* WebKit/Blink Browsers */
+}

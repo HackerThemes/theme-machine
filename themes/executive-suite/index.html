@@ -1,5 +1,10 @@
 {% extends "nunjucks/base.html" %}
 
+{% block stylesheet %}
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald|Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap4-executive-suite.min.css">
+{% endblock %}
+
 {% block content %}
 <div class="jumbotron py-0 bg-light text-dark mb-0 radius-0">
   <div class="container">
@@ -37,9 +42,3 @@
 </div>
 
 {% endblock %}
-
-{% block stylesheet %}
-<link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto" rel="stylesheet">
-<link rel="stylesheet" href="css/bootstrap4-executive-suite.min.css">
-{% endblock %}
-
