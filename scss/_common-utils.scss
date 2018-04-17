@@ -27,3 +27,19 @@
 .radius-0 {
   border-radius: 0;
 }
+
+.text-spacey {
+  line-height: 28px;
+}
+
+.display-1 {
+  @include media-breakpoint-down(sm) {
+    font-size: 4rem;
+  }
+}
+
+.display-2 {
+  @include media-breakpoint-down(sm) {
+    font-size: 3.5rem;
+  }
+}

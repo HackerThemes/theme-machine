@@ -26,6 +26,10 @@ $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI'
   font-size: 32px;
   padding-top: 10px;
   vertical-align: top;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 20px;
+  }
 }
 
 .btn-warning {
@@ -35,3 +39,10 @@ $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI'
 .bg-wizardry {
   background: url('../images/bg-wizardry.jpg');
 }
+
+.display-1 {
+  @include media-breakpoint-down(sm) {
+    font-size: 3rem;
+  }
+}
+

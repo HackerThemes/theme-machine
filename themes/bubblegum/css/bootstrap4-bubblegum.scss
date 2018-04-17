@@ -17,7 +17,6 @@ $border-radius-sm: 10px;
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../scss/common-utils';
 
-
 .text-chicle {
   font-family: 'Chicle', cursive;
 }
@@ -28,8 +27,16 @@ $border-radius-sm: 10px;
 
 .lead {
   font-size: 30px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 20px;
+  }
 }
 
 .display-1 {
   font-size: 150px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 70px;
+  }
 }

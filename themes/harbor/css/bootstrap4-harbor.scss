@@ -21,6 +21,10 @@ $font-family-sans-serif: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI
   font-family: "Oswald", sans-serif;
 }
 
-.bg-harbor {
+.jumbotron-harbor {
+  align-items: center;
   background: url('../images/bg-harbor.jpg');
+  background-position: center;
+  display: flex;
+  min-height: 674px;
 }

@@ -46,4 +46,13 @@ $font-family-sans-serif: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, '
 
 .display-3 {
   font-size: 69px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 40px;
+  }
 }
+
+.text-spacey {
+  line-height: 26px;
+}
+

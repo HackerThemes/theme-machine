@@ -27,14 +27,34 @@ $border-radius-lg: 10px !default;
 
 .display-1 {
   font-size: 142px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 92px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    font-size: 70px;
+  }
 }
 
 .display-3 {
   font-size: 66px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 40px;
+  }
 }
 
 .title-margin-fix {
   margin-top: -33px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: -13px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin-top: 0;
+  }
 }
 
 .text-handwriting {
@@ -42,5 +62,5 @@ $border-radius-lg: 10px !default;
 }
 
 ::selection {
-  background: rgba(180, 63, 82, 0.56); /* WebKit/Blink Browsers */
+  background: rgba(180, 63, 82, .56);
 }

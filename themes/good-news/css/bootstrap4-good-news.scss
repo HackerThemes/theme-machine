@@ -15,6 +15,8 @@ $border-radius-lg: 10px !default;
 
 $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default; //BS
 
+$body-color: $dark;
+
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../scss/common-utils';
 
@@ -27,4 +29,14 @@ $font-family-sans-serif: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI'
 
 .lead {
   font-size: 23px;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    border-color: theme-color-level($color, 1);
+  }
+
+  .alert-#{$color} {
+    border-color: theme-color-level($color, 2);
+  }
 }
