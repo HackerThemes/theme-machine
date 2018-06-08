@@ -12,11 +12,12 @@ You can either clone this entire repository and use the themes under `/dist/`, o
 
 ## Build steps
 
-To build and modify the themes, you'll need to use npm and gulp. On Ubuntu (and hopefully other systems :-) you can do:
+To build and modify the themes, you'll need to use npm and gulp. You'll also need Ruby and scss-lint. On Ubuntu (and hopefully other systems :-) you can do:
 
+1. `gem install scss_lint`
 1. `npm install` to install all the dependencies
-2. `npm install gulp -g` to install gulp globally
-3. `gulp` to run the build once or `gulp watch` to turn on the watcher that rebuilds as you edit
+1. `npm install gulp -g` to install gulp globally
+1. `gulp` to run the build once or `gulp watch` to turn on the watcher that rebuilds as you edit
 
 ## Creators
 
