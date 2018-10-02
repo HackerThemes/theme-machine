@@ -1,6 +1,6 @@
 {
   "name": "theme-machine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of free Bootstrap 4 themes by HackerThemes",
   "main": "index.js",
   "repository": "https://github.com/HackerThemes/theme-machine",
@@ -10,19 +10,19 @@
   "author": "Alexander Rechsteiner (HackerThemes.com)",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.1.3",
     "gulp": "^3.9.1"
   },
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
+    "autoprefixer": "^9.1.5",
     "font-awesome": "^4.7.0",
-    "gulp-clean-css": "^3.9.1",
-    "gulp-nunjucks-render": "^2.2.1",
-    "gulp-postcss": "^7.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-scss-lint": "^0.4.0",
-    "gulp-sourcemaps": "^2.6.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-scss-lint": "^0.7.1",
+    "gulp-sourcemaps": "^2.6.4",
     "lazypipe": "^1.0.1"
   }
 }
