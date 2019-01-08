@@ -257,7 +257,7 @@ gulp.task('watch', ['default'], function() {
   gulp.watch(['themes/business-tycoon/css/*.scss'], ['build-business-tycoon']);
   gulp.watch(['themes/charming/css/*.scss'], ['build-charming']);
   gulp.watch(['themes/neon-glow/css/*.scss'], ['build-neon-glow']);
-  gulp.watch(['nunjucks/*.html', 'themes/**/*.html'], ['nunjucks']);
+  gulp.watch(['nunjucks/*.html', 'nunjucks/**/*.html', 'themes/**/*.html'], ['nunjucks']);
 });
 
 gulp.task('default', ['build-neon-glow', 'build-executive-suite', 'build-good-news', 'build-growth', 'build-harbor', 'build-hello-world', 'build-pleasant', 'build-retro', 'build-wizardry', 'build-charming', 'build-daydream', 'build-bubblegum', 'build-business-tycoon', 'build-vibrant-sea', 'nunjucks'], function() {
