@@ -9,20 +9,18 @@
   },
   "author": "Alexander Rechsteiner (HackerThemes.com)",
   "license": "MIT",
-  "dependencies": {
-    "bootstrap": "^4.2.1",
-    "gulp": "^3.9.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
+    "autoprefixer": "^9.4.4",
+    "bootstrap": "^4.2.1",
     "font-awesome": "^4.7.0",
-    "gulp-clean-css": "^3.10.0",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-nunjucks-render": "^2.2.2",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
-    "gulp-scss-lint": "^0.7.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "lazypipe": "^1.0.1"
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4"
   }
 }

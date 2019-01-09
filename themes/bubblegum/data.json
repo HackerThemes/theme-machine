@@ -1,0 +1,11 @@
+{
+  "title" : "Bubblegum",
+  "downloadLink" : "http://google.com",
+  "navbarClass" : "bg-danger text-white navbar-dark",
+  "navbarLinkClass" : "text-white",
+  "downloadButtonClass" : "btn-light text-danger",
+  "folder" : "bubblegum/",
+  "css" : "css/bootstrap4-bubblegum.min.css",
+  "excerpt" : "A playful and open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Chicle|Open+Sans"
+}

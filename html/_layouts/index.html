@@ -1,0 +1,27 @@
+{% extends "html/_layouts/base.html" %}
+
+{% block content %}
+{% block jumbotron %}
+<div class="container">
+  <div class="py-5">
+    <h1>Bootstrap Theme</h1>
+    <p>
+      This is a minimal Bootstrap Starter template.
+    </p>
+
+    <a href="#!" class="btn btn-primary">Default Button</a>
+
+    <a href="#!" class="btn btn-outline-primary">Outline Button</a>
+  </div>
+</div>
+{% endblock %}
+
+<div class="container py-5">
+  <h1>Thanks</h1>
+
+  <p>Thank you for downloading this theme. If you have trouble or find a bug, please open an issue on GitHub:<br>
+    <a href="https://github.com/HackerThemes/theme-machine">https://github.com/HackerThemes/theme-machine</a></p>
+
+  {% block pro %}{% endblock %}
+</div>
+{% endblock %}
