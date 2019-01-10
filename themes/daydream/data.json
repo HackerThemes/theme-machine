@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Daydream",
+  "navbarClass" : "bg-primary text-white navbar-dark",
+  "navbarLinkClass" : "text-white",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "daydream/",
+  "css" : "css/bootstrap4-daydream.min.css",
+  "excerpt" : "A playful and open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Shadows+Into+Light",
+  "filename" : "hackerthemes-daydream.zip",
+  "dbId" : "89"
+}

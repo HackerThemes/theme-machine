@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Growth",
+  "navbarClass" : "bg-dark navbar-dark text-white",
+  "navbarLinkClass" : "text-light",
+  "downloadButtonClass" : "btn-secondary",
+  "folder" : "growth/",
+  "css" : "css/bootstrap4-growth.min.css",
+  "excerpt" : "An open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Raleway",
+  "filename" : "hackerthemes-growth.zip",
+  "dbId" : "92"
+}

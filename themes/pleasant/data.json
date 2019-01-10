@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Pleasant",
+  "navbarClass" : "bg-primary navbar-dark text-white",
+  "navbarLinkClass" : "text-light",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "pleasant/",
+  "css" : "css/bootstrap4-pleasant.min.css",
+  "excerpt" : "An open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu",
+  "filename" : "hackerthemes-pleasant.zip",
+  "dbId" : "96"
+}

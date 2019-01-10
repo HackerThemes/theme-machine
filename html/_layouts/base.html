@@ -10,21 +10,24 @@
     {% block stylesheet %}
     <link rel="stylesheet" href="{{ css }}">
     {% endblock %}
-    {% block font %} <link href="{{ font }}" rel="stylesheet"> {% endblock %}
+    {% block font %}
+    <link href="{{ font }}" rel="stylesheet">
+    {{nonGoogleFont|safe}}
+    {% endblock %}
   </head>
   <body>
 
   <div class="{{navbarClass}}">
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <nav class="navbar px-0 navbar-expand-lg navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a href="index.html" class="p-3 {{ navbarLinkClass }}">Start</a>
-            <a href="app.html" class="p-3 {{ navbarLinkClass }}">App example</a>
-            <a href="form.html" class="p-3 {{ navbarLinkClass }}">Form example</a>
+            <a href="index.html" class="pl-md-0 p-3 {{ navbarLinkClass }}">Start</a>
+            <a href="app.html" class="p-3 text-decoration-none {{ navbarLinkClass }}">App example</a>
+            <a href="form.html" class="p-3 text-decoration-none {{ navbarLinkClass }}">Form example</a>
           </div>
         </div>
       </nav>

@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Hello World",
+  "navbarClass" : "bg-dark navbar-dark text-white",
+  "navbarLinkClass" : "text-light",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "hello-world/",
+  "css" : "css/bootstrap4-hello-world.min.css",
+  "excerpt" : "An open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:300,400",
+  "filename" : "hackerthemes-hello-world.zip",
+  "dbId" : "94"
+}

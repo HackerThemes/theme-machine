@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Charming",
+  "navbarClass" : "bg-accent-2 text-white navbar-dark",
+  "navbarLinkClass" : "text-white",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "charming/",
+  "css" : "css/bootstrap4-charming.min.css",
+  "excerpt" : "A charming Bootstrap theme",
+  "font" : "https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic",
+  "filename" : "hackerthemes-charming.zip",
+  "dbId" : "88"
+}

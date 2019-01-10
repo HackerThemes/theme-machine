@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Executive Suite",
+  "navbarClass" : "bg-dark navbar-dark text-white",
+  "navbarLinkClass" : "text-white",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "executive-suite/",
+  "css" : "css/bootstrap4-executive-suite.min.css",
+  "excerpt" : "An exquisite and open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Merriweather|Oswald|Source+Sans+Pro",
+  "filename" : "hackerthemes-executive-suite.zip",
+  "dbId" : "90"
+}

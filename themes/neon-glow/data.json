@@ -1,1 +1,14 @@
-{}
+{
+  "title" : "Neon Glow",
+  "navbarClass" : "navbar-dark text-white",
+  "navbarLinkClass" : "text-light",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "neon-glow/",
+  "css" : "css/bootstrap4-neon-glow.min.css",
+  "excerpt" : "An open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Roboto",
+  "filename" : "hackerthemes-neon-glow.zip",
+  "nonGoogleFont" : "<link rel='stylesheet' href='//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>",
+  "isDark" : true,
+  "dbId" : "95"
+}

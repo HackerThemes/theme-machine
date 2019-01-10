@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Harbor",
+  "navbarClass" : "bg-info navbar-dark text-white",
+  "navbarLinkClass" : "text-light",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "harbor/",
+  "css" : "css/bootstrap4-harbor.min.css",
+  "excerpt" : "An open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Oswald|Raleway",
+  "filename" : "hackerthemes-harbor.zip",
+  "dbId" : "93"
+}

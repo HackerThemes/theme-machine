@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Business Tycoon",
+  "navbarClass" : "bg-dark text-white navbar-dark",
+  "navbarLinkClass" : "text-white",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "business-tycoon/",
+  "css" : "css/bootstrap4-business-tycoon.min.css",
+  "excerpt" : "A Bootstrap theme with a professional look. ",
+  "font" : "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400",
+  "filename" : "hackerthemes-business-tycoon.zip",
+  "dbId" : "87"
+}

@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Good News",
+  "navbarClass" : "bg-light",
+  "navbarLinkClass" : "text-dark",
+  "downloadButtonClass" : "btn-outline-dark",
+  "folder" : "good-news/",
+  "css" : "css/bootstrap4-good-news.min.css",
+  "excerpt" : "A subtle open source Bootstrap theme focused on typography.",
+  "font" : "https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif",
+  "filename" : "hackerthemes-good-news.zip",
+  "dbId" : "91"
+}

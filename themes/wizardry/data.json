@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Wizardry",
+  "navbarClass" : "bg-dark navbar-dark text-white",
+  "navbarLinkClass" : "text-white",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "wizardry/",
+  "css" : "css/bootstrap4-wizardry.min.css",
+  "excerpt" : "An open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Comfortaa|Roboto:300,400",
+  "filename" : "hackerthemes-wizardry.zip",
+  "dbId" : "99"
+}

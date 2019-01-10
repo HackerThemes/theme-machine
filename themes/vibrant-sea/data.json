@@ -1,1 +1,12 @@
-{}
+{
+  "title" : "Vibrant Sea",
+  "navbarClass" : "bg-primary navbar-dark text-white",
+  "navbarLinkClass" : "text-white",
+  "downloadButtonClass" : "btn-outline-light",
+  "folder" : "vibrant-sea/",
+  "css" : "css/bootstrap4-vibrant-sea.min.css",
+  "excerpt" : "An open source Bootstrap theme.",
+  "font" : "https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto:400,700",
+  "filename" : "hackerthemes-vibrant-sea.zip",
+  "dbId" : "98"
+}

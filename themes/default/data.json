@@ -1,1 +1,5 @@
-{}
+{
+  "title" : "Bootstrap Buffet",
+  "bodyClass" : "ht-tm-default-theme",
+  "excerpt" : "A visual overview of the default Bootstrap theme. With an interactive code picker and inspector."
+}
