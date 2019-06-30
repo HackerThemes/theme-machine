@@ -9,7 +9,9 @@
   },
   "author": "Alexander Rechsteiner (HackerThemes.com)",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "natives": "^1.1.6"
+  },
   "devDependencies": {
     "autoprefixer": "^9.4.9",
     "bootstrap": "^4.3.1",
